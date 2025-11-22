@@ -1,0 +1,2004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICACECS 2025</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Custom styling for active sections */
+    .content-section {
+      display: none;
+    }
+    .content-section.active {
+      display: block;
+    }
+
+
+    .blinking-highlight {
+      color: rgb(0, 0, 0);
+      background-color: #c5ffc5;
+      padding: 10px;
+      border-radius: 8px;
+      animation: blink 3s infinite;
+    }
+    .closed-message {
+      color: red;
+      font-weight: bold;
+      margin-top: 10px;
+      display: none;
+    }
+ 
+  </style>
+</head>
+<body>
+  <!-- Header with Event Poster -->
+  <header class="header text-center">
+    <img src="./assets/icacecs_poster.jpg" alt="Event Poster" class="img-fluid w-100 h-auto">
+  </header>
+  <section class="carousel mt-4">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/main.jpg" alt="Slide 1" class="img-fluid">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/ai.jpg" alt="Slide 2" class="img-fluid">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/world.jpg" alt="Slide 3" class="img-fluid">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/iot.jpg" alt="Slide 4" class="img-fluid">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/stocks.jpg" alt="Slide 5" class="img-fluid">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/socialnetwork.jpg" alt="Slide 6" class="img-fluid">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+  
+ 
+  
+
+  <!-- Scrolling Text -->
+  <div class="scrolling-container bg-danger text-white py-2">
+    <div class="scrolling-content">
+ 
+      All accepted and presented papers will be published in Springer Nature Scopus Indexed series “Smart Innovation, Systems and Technologies (SIST)” (<a href="https://www.springer.com/series/8767" target="_blank">https://www.springer.com/series/8767)</a>)
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto w-100 justify-content-between">
+          <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="showSection('home')">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="showSection('call-for-paper')">Call For Paper</a></li>
+          <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="showSection('publications')">Publication</a></li>
+          <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="showSection('programme-schedule')">Programme Schedule</a></li>
+         
+ <!-- Committees Dropdown -->
+ <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" aria-expanded="false">Committees</a>
+  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('chief-patrons')">CHIEF PATRONS</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('patrons')">PATRONS</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('convenor')">CONVENOR</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('programme-chair')">PROGRAMME CHAIR</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('programme-co-chair')">PROGRAMME CO-CHAIR</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('general-chair')">GENERAL CHAIR</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('honorary-chair')">HONORARY CHAIR</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('editorial-board')">EDITORIAL BOARD</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('international-advisory-committee')">INTERNATIONAL ADVISORY COMMITTEE</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('national-advisory-committee')">NATIONAL ADVISORY COMMITTEE</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('program-committee')">PROGRAM COMMITTEE</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('technical-committee')">TECHNICAL COMMITTEE</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('organizing-committee')">ORGANIZING COMMITTEE</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('conference-proceedings-committee')">CONFERENCE PROCEEDINGS COMMITTEE</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('review-committee')">REVIEW COMMITTEE</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('website-management-committee')">WEBSITE MANAGEMENT COMMITTEE</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('sponsorship-committee')">SPONSORSHIP COMMITTEE</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('workshop-committee')">WORKSHOP COMMITTEE</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('finance-and-logistics-committee')">FINANCE AND LOGISTICS COMMITTEE</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('preconference')">PRECONFERENCE WORKSHOP COMMITTEE</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('international-publicity')">INTERNATIONAL PUBLICITY AND COMMUNICATIONS COMMITTEE</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('national-publicity')">NATIONAL PUBLICITY AND COMMUNICATIONS COMMITTEE</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('technical-and-managing-committee')">TECHNICAL AND MANAGING COMMITTEE</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('stage-decoration')">STAGE DECORATION AND HOSPITALITY</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('certificates')">CERTIFICATES, POSTERS & INVITATIONS</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('documentation-and-filing')">DOCUMENTATION AND FILING</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('photography')">PHOTOGRAPHY AND MEDIA MANAGEMENT</a></li>
+  </ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="showSection('keynote')">Keynote Session</a></li>
+          <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="showSection('registration')">Registration</a></li>
+          <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="showSection('contact-us')">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="showSection('gallery')">Gallery</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownPrevious" role="button" data-bs-toggle="dropdown" aria-expanded="false">Previous Conferences</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownPrevious">
+              <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('icacecs2020')">ICACECS 2020</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('icacecs2021')">ICACECS 2021</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('icacecs2022')">ICACECS 2022</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('icacecs2023')">ICACECS 2023</a></li>
+    <li><a class="dropdown-item" href="javascript:void(0)" onclick="showSection('icacecs2024')">ICACECS 2024</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="scrolling-container bg-danger text-white py-2">
+    <div class="scrolling-content">
+  <p>ICACECS 2025 presentation schedule updated</p>
+
+    </div>
+  </div>
+
+
+  <!-- Main Content -->
+  <main class="container mt-4">
+    <section id="home" class="content-section ">
+      <div class="row">
+        <!-- <div class="col"></div> -->
+        <div class="col-sm-8 pl-5 mt-5 border-right">
+            <h3>ICACECS 2025</h3>
+    <p style="text-align:justify"><br />
+    The Department of Computer Science &amp; Engineering, VNR VJIET, successfully
+    organized an International Conference<b> “International Conference on
+    Advances in Computer Engineering and Communication Systems (ICACECS)&quot;</b>
+    (ICACECS 2020, ICACECS 2021, ICACECS 2022 ,ICACECS 2023 and ICACECS 2024) consecutively for 5 years.
+    This conference is conducted in association with <b>“ Springer Nature International ”</b> the publication
+    partner and technically sponsored by <b>Computer Society of India</b> (CSI). Every year
+    there was an overwhelming response from researchers around the globe publishing
+    their research contributions in<b> “Smart Innovations in Mezzanine Technologies,
+    Data Analytics, Knowledge Engineering, Natural Language Processing, Networks and Communication Systems”</b> - the theme of the
+    conference.
+    </p>
+    
+    <p style="text-align:justify">
+    Continuing this legacy, the international conference <b>ICACECS 2025</b> is now
+    scheduled to be conducted on 6th to 8th August 2025 in <b> Hybrid Mode.</b>
+    </p>
+    
+    
+    <p style="text-align:justify">
+      This year, ICACECS 2025 is organized in collaboration with <b>Institut Mines-Telecom Business School, Évry-Courcouronnes, France</b><b>,The Assam Kaziranga University, Assam, India </b> and <b>Mohan Babu University , Tirupati.</b>
+      </p>
+    <p style="text-align:justify">
+    Authors are solicited to contribute their submissions illustrating research results and
+    innovations, and significant advances in the fields of<b> Artificial Intelligence,
+    Machine learning, Natural Language Processing, Smart Systems, Networks, and Communication Systems,
+    Quantum computing, Knowledge Engineering and Ontology, Internet of
+    Things, Education Technology and Business Engineering.</b>
+    </p>
+    <p style="text-align:justify">
+    <b>ICACECS 2025</b> is a unique forum bringing together scholars from the different
+    countries to participate and transform the Research Landscape of the globe and
+    carve a Road Map for Implementation. It provides a valuable networking opportunity
+    and brings a new era for the Research scholars, Students, Professors, Industrialists
+    providing insights to the recent trends and developments in the field of Computer
+    Science with a special focus on Mezzanine technologies.
+    </p>
+    
+    
+    <!--
+    <p style="text-align:center">Submit your paper through<br />
+    <a href="https://easychair.org/conferences/?conf=icacecs2023">EasyChair</a></p>-->
+    
+    <!--<p>&nbsp;</p>-->
+    <h3>Our Institute - VNRVJIET</h3>
+    <!--<p>&nbsp;</p>-->
+    
+    <p style="text-align:justify">
+    Vallurupalli Nageswara Rao Vignana Jyothi Institute of Engineering and Technology (VNRVJIET), established in the year 1995, is a unique institution that charts distinct pathways towards Academic and Research excellence. VNRVJIET provides a value-added curriculum that is driven by robust infrastructure, highly qualified and competent staff and a vision to be a top ranked institution that is primed by research and innovation. It has become and remains one of the most distinguished and premier institutions of higher education in the State of Telangana.
+    </p>
+
+    <p style="text-align:justify">Committed to fundamental long-term research and innovation in leading-edge technologies, performs a diverse and expanded set of activities like,</p>
+    
+    
+    <ul>
+      <li style="text-align: justify;">Producing high-quality engineers with the required skills and knowledge at different levels (undergraduate, postgraduate).</li>
+      <li style="text-align: justify;">Exploring new horizons through fundamental research.</li>
+      <li style="text-align: justify;">Continuous improvement of knowledge repository and domain expertise.</li>
+      <li style="text-align: justify;">Encouraging new ideas and proposals through research awards and remuneration.</li>
+      <li style="text-align: justify;">Becoming a source for innovation, addressing societal needs, and developing new products leading to revenue generation.</li>
+    </ul>
+    
+    <!--<p>&nbsp;</p>-->
+    
+    <p style="text-align:center">Reach Us at:<br />
+    <a href="http://vnrvjiet.ac.in/">VNR VJIET</a></p>
+    
+    
+    <h3>Our Department - CSE</h3>
+    
+    <!--<p>&nbsp;</p>-->
+    
+    <p style="text-align:justify">
+    The Department of Computer Science and Engineering (CSE), established in the year 1995, evolved towards enhancing Computing and its applications to build the intellectual capital of the society. The department is witnessing a period of exciting growth and opportunity propelled by the growth of technology and its recognition through excellence.
+    <br>
+    <br>
+    <!--CSE department offers 6 UnderGraduate (UG) courses:- -->
+    CSE department offers 2 UnderGraduate (UG) courses:-
+    
+     </p>
+
+    <ol>
+      <li style="text-align: justify;">Computer Science and Engineering </li>
+      <li style="text-align: justify;">Computer Science and Business Systems (CSBS) in collaboration with Tata Consultancy Services ( TCS ).</li>
+    
+    </ol>
+      and offers two PG Courses in 
+    <ol>
+    <li style="text-align: justify;">Software Engineering (SE)</li> 
+    <li style="text-align: justify;">Computer Science Engineering (CSE)</li>
+    </ol>
+     
+    <p style="text-align:justify">CSE department provides state-of-art laboratories equipped with the latest infrastructure. Committed and competent faculty keep abreast of the upcoming technologies, through continuous participation in seminars and workshops, registering for the advanced courses through MOOCs
+    and acquiring merit certifications.</p>
+    
+    <p style="text-align:justify">
+    The Computer Science students get placed every year in national and multinational companies with a very good average pay package. The inter/intra collegiate competitions conducted by the department, provide a platform for enhancing knowledge base, soft skills and team spirit.</p>
+    
+    
+    
+    <p style="text-align:justify">The CSE department is involved in pioneering research with Global excellence and local relevance in cutting-edge technologies like Image Processing, Augmented Reality, Data Analytics, Internet of Things, Mezzanine Technologies, Networks and has several publications to its creditlisted in SCOPUS, Web of Science, SCI indexed, etc.</p>
+    <!--
+    <p style="text-align:justify">&nbsp;</p>
+    
+    <p style="text-align:justify">&nbsp;</p>
+    -->
+    <p style="text-align:center">for more information, visit us at &nbsp;<a href="http://vnrvjiet.ac.in/cse.php" target="_blank">www.vnrvjiet.ac.in/cse.php</a></p>
+    
+    <!--<p>&nbsp;</p>
+    
+    <p>&nbsp;</p>-->
+            
+    
+        </div>
+        <div class="col-sm-4 pr-5 mt-5">
+        <div class="mb-4">
+          <center>
+            <a id="message" href="https://icacecs.org/ICACECS-2025-Invitation.pdf" target="_blank" rel="noopener noreferrer" class="papersubmission-3"> ICACECS 2025 INVITATION</a>
+            </center>
+          </div>
+            
+            <p class="blinking-highlight">
+    <b>International Author Incentive:</b><br>
+    Manuscripts submitted with contributing authors affiliated with international institutions will receive a registration <b>fee waiver of $40 </b>as a token of encouragement for global research collaboration
+            </p>
+
+  <p class="blinking-highlight">
+    <b>Incentive for International Submissions:</b><br>
+    Manuscripts of pure international origin — with all contributing authors affiliated exclusively with international institutions — will be eligible for a registration <b>fee waiver of $50</b> as part of our effort to promote and support global research collaboration.
+  </p>
+
+           <div class="para" style="width: auto;">
+               <center>
+                   <p style="font-size: 25px; color: red;" id="emo"></p>
+               </center><br>
+       
+               <div class="card shadow mb-5 bg-white rounded">
+                   <div class="card-body">
+                       <center>
+                     
+   <p>
+    <a href="https://cmt3.research.microsoft.com/ICACECS2025" id="submissionLink-2" target="_blank">
+      Link for Paper submission - ICACECS 2025
+    </a>
+  </p>
+  <div id="msg-2" class="closed-message">Submissions are closed</div>
+
+                       </center><br>
+                   </div>
+               </div>
+       
+               <div class="card shadow mb-4 bg-white rounded">
+                <a href="https://icacecs.org/ICACECS-2025-Brochure.pdf" target="_blank" rel="noopener noreferrer">
+                    <div class="card-body">
+                        <center><h4><strong>ICACECS 2025 Brochure</strong></h4></center>
+                    </div>
+                </a>
+               
+            </div>
+            
+       
+               <!-- <div>
+                   <p id="blink" style="color: red; font-size: 20px; font-weight: bold; font-family: sans-serif;">
+                    Early Bird Registrations: Get ₹1000/- off for Indian Authors and $15 USD off for Foreign Authors. Offer valid from June 14th 2025 to June 28th 2025.
+                   </p>
+               </div> -->
+       
+               <script type="text/javascript"> 
+                   var blink = document.getElementById('blink'); 
+                   setInterval(function () { 
+                       blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0); 
+                   }, 1000); 
+               </script>
+       
+               <div class="card shadow mb-5 bg-white rounded">
+                   <!-- <a href="" target="_blank" rel="noopener noreferrer"> -->
+                       <div class="card-body">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1wksCY56xnUdcr_AU7_4g3deOvTUjfWVErr2MnxLvT_yRXw/viewform?usp=send_form" target="_blank" rel="noopener noreferrer">
+                           <center>Inviting Reviewers</center>
+                          </a>
+                       </div>
+                   <!-- </a> -->
+               </div>
+       
+               
+           </div>
+       
+           <h3>Important Dates</h3>
+           <table class="table table-striped">
+               <tbody>
+                   <tr>
+                       <td>Paper Submission Deadline</td>
+                   </tr>
+                   <tr>
+                       <td style="color: crimson;">05-07-2025</td>
+                   </tr>
+                   <tr>
+                       <td>Acceptance Notification</td>
+                   </tr>
+                   <tr>
+                       <td style="color: crimson;">08-07-2025</td>
+                   </tr>
+                   <tr>
+                       <td>International Registrations</td>
+                   </tr>
+                   <tr>
+                       <td style="color: crimson;">12-07-2025</td>
+                   </tr>
+                   <tr>
+                       <td>Camera Ready Copy</td>
+                   </tr>
+                   <tr>
+                       <td style="color: crimson;">12-07-2025</td>
+                   </tr>
+               </tbody>
+           </table>
+           <h3 class="visitor-heading">Number of Visitors</h3>
+           <div class="visitor-counter-container">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=17384678&style=0006&nbdigits=6&type=page&initCount=0" 
+                 title="Counter Widget" 
+                 alt="Visit counter For Websites" 
+                 border="0" />
+        </div>
+        
+        <h5 class=" border-bottom fw-bold mt-4 mb-2">
+          CONVENORS
+      </h5>
+      <ul class="convenors-list ms-3">
+          <li>Dr. S.Nagini, VNR VJIET, Hyderabad, India.</li>
+          <li>Dr. A Brahmananda Reddy, VNR VJIET, Hyderabad, India.</li>
+      </ul>
+      
+      <h5 class="border-bottom fw-bold mt-4 mb-2">
+          GENERAL CHAIR
+      </h5>
+      <ul class="general-chairs-list ms-3">
+
+<li>Dr. V Baby, Associate Professor & HoD in Department of CSE, VNRVJIET, Hyderabad, India. </li>	
+<li>	Dr. Bhumika Gupta, Professor, ITM University, France.</li>
+      </ul>
+      
+      <h5 class="border-bottom fw-bold mt-4 mb-2">
+          PROGRAMME CHAIRS
+      </h5>
+      <ul class="programme-chair-list ms-3">
+          <li>Dr. N. V. Sailaja, VNR VJIET, Hyderabad, India.</li>
+          <li>Dr. R. Vijaya Saraswathi, VNR VJIET, Hyderabad, India.</li>
+      </ul>
+      
+      <h5 class="border-bottom fw-bold mt-4 mb-2">
+        PROGRAMME CO-CHAIRS
+      </h5>
+      <ul class="programme-co-chair-list ms-3">
+          <li>Dr. R.Vasavi, VNR VJIET, Hyderabad, India.</li>
+          <li>Dr. N.Sandeep Chaitanya, VNR VJIET, Hyderabad, India.</li>
+          <li>Dr. P. Tejaswi, VNR VJIET, Hyderabad, India.</li>
+          <li>Dr. K.Srinivas, VNR VJIET, Hyderabad, India.</li>
+      </ul>
+      
+       </div>
+       <h5 class="text-center m-3">PREVIOUS PROCEEDINGS</h5>
+       <div class="books-container">
+         
+         <div class="book-item">
+           <img class="book-image" src="./assets/2020_LAIS.webp" alt="ICACECS 2020 - LAIS">
+           <h3 class="book-title">ICACECS 2020 - LAIS</h3>
+         </div>
+         <div class="book-item">
+           <img class="book-image" src="./assets/2020_AIS.webp" alt="ICACECS 2020 - AIS">
+           <h3 class="book-title">ICACECS 2020 - AIS</h3>
+         </div>
+         <div class="book-item">
+           <img class="book-image" src="./assets/2021_AIS.webp" alt="ICACECS 2021 - AIS">
+           <h3 class="book-title">ICACECS 2021 - AIS</h3>
+         </div>
+         <div class="book-item">
+           <img class="book-image" src="./assets/2022_LNNS.webp" alt="ICACECS 2022 - LNNS">
+           <h3 class="book-title">ICACECS 2022 - LNNS</h3>
+         </div>
+         <div class="book-item">
+          <img class="book-image" src="./assets/2023book.jpg"  alt="ICACECS 2023 - AHCS">
+          <h3 class="book-title mt-3">ICACECS 2023 - AHCS</h3>
+        </div>
+        <div class="book-item">
+          <img class="book-image" src="./assets/2024book.jpg" alt="ICACECS 2023 - AHCS">
+          <h3 class="book-title">ICACECS 2024</h3>
+        </div>
+       </div>
+
+       <div class="container-fluid">
+        <div class="d-flex justify-content-center mb-2 mt-5 align-items-center">
+            <img src="./assets/hyd.png"  width="1000px" alt="Footer Image" class="img-fluid">
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="call-for-paper" class="content-section">
+  <h2 class="call-for-papers-title">Call For Papers</h2>
+  <p class="call-for-papers-description">
+    <strong>6th INTERNATIONAL CONFERENCE ON ADVANCES IN COMPUTER ENGINEERING AND COMMUNICATION SYSTEMS (ICACECS-2025)</strong> invites original work in the broad areas of Computer Engineering and Communication Systems. The major themes are identified (but not limited to) and listed below under the Conference Tracks.
+  </p>
+
+  <h3 class="author-guidelines-title">AUTHOR GUIDELINES</h3>
+  <ul class="author-guidelines-list">
+    <li>Authors should submit their papers only through the Microsoft CMT Conference link. Create/sign up for a Microsoft CMT account and upload your paper.</li>
+    <li>The papers which are not in the required format will be subjected to rejection without any judgment on its quality.</li>
+    <li>Plagiarism report of the content exceeding the acceptable range will not be permitted for presentation.</li>
+    <li>All papers that conform to submission guidelines will be peer-reviewed and evaluated based on originality, innovation, technical and/or research content/depth, correctness, relevance to conference, contributions, and readability.</li>
+    <li>At least one author of an accepted paper should register for their paper to be presented/published. The co-authors can pay the participant amount to attend the conference/workshop(s).</li>
+    <li>If an author has got more than one accepted paper, each paper has to be registered separately.</li>
+    <li>The conference proceedings will be shared in SOFT COPY to the Registered Author ONLY.</li>
+    <li>The registration doesn’t cover accommodation, transportation, etc.</li>
+    <li>If you have any queries or clarifications on registration, please email to <a href="mailto:icacecs@gmail.com">icacecs@gmail.com</a></li>
+  </ul>
+
+<p>
+
+  <b>International Author Incentive:</b><br>
+    Manuscripts submitted with contributing authors affiliated with international institutions will receive a registration fee waiver of $40  as a token of encouragement for global research collaboration
+            </p>
+
+  <p>
+    <b>Incentive for International Submissions:</b><br>
+    Manuscripts of pure international origin—with all contributing authors affiliated exclusively with international institutions—will be eligible for a registration fee waiver of $50 as part of our effort to promote and support global research collaboration.
+  </p>
+  <h3 class="submission-title">Submit your paper through</h3>
+   <p class="submission-links">
+    <a href="https://cmt3.research.microsoft.com/ICACECS2025" id="submissionLink" target="_blank">ICACECS 2025</a>
+  </p>
+   <center>
+    <div id="msg" class="closed-message">Submissions are closed</div>
+  </center>
+  
+  <p class="submission-links">
+    Before submission, <a href="https://www.springer.com/gp/authors-editors/editors/publishing-ethics-for-journals/4176" target="_blank">click here to read the Springer publication ethics and guidelines</a>.
+  </p>
+ 
+  <h3 class="template-links-title">Template Download Links</h3>
+  <ul class="template-links-list">
+    <li><a href="https://icacecs.org/LaTex+Package.zip" target="_blank">LaTeX Template</a></li>
+    <li><a href="https://icacecs.org/Word+Template.zip" target="_blank">Microsoft Word Template</a></li>
+   <li><a href="https://icacecs.org/Springer_Guidelines_for_Authors_of_Proceedings.pdf">Springer Proceedings Guidelines for Authors</a><br/><br/></li>
+  </ul>
+
+  <p class="template-links">
+    <a href="https://www.springer.com/us/authors-editors/conference-proceedings/conference-proceedings-guidelines" target="_blank">
+      You can also download templates from Springer Website
+    </a>
+  </p>
+  <ul class="template-links-list">
+    <li><a href="ICACECS_2025_Copyright_Form_Springer_SIST_Series.pdf" target="_blank">ICACECS-2025_Copyright Form Pdf</a></li>
+    <li><a href="" target="_blank">ICACECS-2025 Registration Form</a></li>
+  </ul>
+
+  
+  <h3 class="conference-tracks-title border-bottom">Conference Tracks</h3>
+
+  <div class="track">
+    <h2 class="track-title border-bottom fw-bold">Mezzanine Technologies</h2>
+    <ul>
+      <li>Artificial Intelligence and Machine Learning</li>
+      <li>Assistive Technologies</li>
+      <li>Augmented Cognition</li>
+      <li>Deep Learning and Evolutionary Systems</li>
+      <li>Blockchain Technologies</li>
+      <li>High-Performance Computing</li>
+      <li>Quantum Computing</li>
+    </ul>
+  </div>
+
+  <div class="track">
+    <h2 class="track-title border-bottom fw-bold">Big Data and Data Analytics</h2>
+    <ul>
+      <li>Big Data and Intelligent Transportation</li>
+      <li>Business Analytics & Data Engineering</li>
+      <li>Cyber Security & Information Retrieval Systems</li>
+      <li>Agricultural Informatics and Communication</li>
+      <li>Community Information Systems</li>
+      <li>Semantic Web and Ontologies</li>
+    </ul>
+  </div>
+
+  <div class="track">
+    <h2 class="track-title border-bottom fw-bold">Cloud, IoT and Distributed Computing</h2>
+    <ul>
+      <li>Sensors, Technology and Network</li>
+      <li>Control Engineering</li>
+      <li>Computer-Aided Diagnosis</li>
+      <li>System Architectures and Platforms</li>
+      <li>Service-Oriented Architectures</li>
+      <li>Smart Devices</li>
+      <li>Pattern Recognition and Analysis</li>
+      <li>Communication Architecture</li>
+    </ul>
+  </div>
+
+  <div class="track">
+    <h2 class="track-title border-bottom fw-bold">Smart Systems</h2>
+    <ul>
+      <li>Smart Grid Systems, Intelligent Control, and Robotics</li>
+      <li>Smart Communication System Models</li>
+      <li>Communication in Wireless Multimedia Sensor Networks</li>
+      <li>Smart Energy Networks & Multi-Agent Systems</li>
+      <li>Wearables, Body Sensor Networks</li>
+      <li>Green Computing</li>
+      <li>Gaming Engineering</li>
+    </ul>
+  </div>
+
+  <div class="track">
+    <h2 class="track-title border-bottom fw-bold">Networks and Communication Systems</h2>
+    <ul>
+      <li>Computing Smart Spaces and Personal Area Networks</li>
+      <li>Social Network Behaviors</li>
+      <li>5G Networks & Internet of Things (IoT)</li>
+      <li>Internet Security and Privacy Localization</li>
+      <li>Mobile and Ubiquitous Computing</li>
+      <li>4G and Long Term Evolution (LTE)</li>
+    </ul>
+  </div>
+
+  <div class="track">
+    <h2 class="track-title border-bottom fw-bold">Generative AI for Advanced Computing</h2>
+    <ul>
+      <li>Generative AI for efficient algorithms in distributed and parallel systems</li>
+      <li>Automation in system architecture design using AI</li>
+      <li>Deepfake detection</li>
+      <li>Network traffic prediction and optimization</li>
+      <li>Signal processing and Transmission</li>
+      <li>Real-time translation and natural language processing</li>
+    </ul>
+  </div>
+
+  <div class="track">
+    <h2 class="track-title border-bottom fw-bold">Business and Entrepreneurship in Technology</h2>
+    <ul>
+      <li>Blockchain Technology</li>
+      <li>E-commerce platforms</li>
+      <li>Business Intelligence</li>
+      <li>AI/ML frameworks</li>
+      <li>Cloud solutions</li>
+      <li>Cybersecurity in Business</li>
+    </ul>
+  </div>
+
+  <div class="track">
+    <h2 class="track-title border-bottom fw-bold">Data-Driven Decision-Making in Business</h2>
+    <ul>
+      <li>Data Mining</li>
+      <li>Predictive Analytics</li>
+      <li>Sentiment Analysis</li>
+      <li>Big Data Frameworks</li>
+      <li>Visualization Tools</li>
+      <li>Security Technologies</li>
+    </ul>
+
+</div>
+
+  
+</section>
+
+<section id="publications" class="content-section">
+  <h6>All accepted and presented papers will be published in Springer Nature Scopus Indexed series “Smart Innovation, Systems and Technologies” (<a href="https://www.springer.com/series/8767" target="_blank" >https://www.springer.com/series/8767 </a> ). All books published in the series are submitted for consideration in Web of Science. </h6>
+  
+<p>
+
+  <b>International Author Incentive:</b><br>
+    Manuscripts submitted with contributing authors affiliated with international institutions will receive a registration fee waiver of $40  as a token of encouragement for global research collaboration
+            </p>
+
+  <p>
+    <b>Incentive for International Submissions:</b><br>
+    Manuscripts of pure international origin—with all contributing authors affiliated exclusively with international institutions—will be eligible for a registration fee waiver of $50 as part of our effort to promote and support global research collaboration.
+  </p>
+</section>
+
+<section id="programme-schedule" class="content-section">
+  <div>
+    <center><h4><strong>ICACECS 2025 Presentation Schedule</strong></h4></center>
+    <a href="https://icacecs.org/ICACECS_2025_Presentation_Template.pptx" target="_blank"
+     style="margin: 10px; display: inline-block; padding: 10px 15px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;"
+     onmouseover="this.style.backgroundColor='#1e7e34';"
+     onmouseout="this.style.backgroundColor='#28a745';">
+     Download Presentation ppt template
+  </a>
+  <br>
+  <a href="https://icacecs.org/ICACECS-2025-Schedule.pdf" download
+    style="margin: 10px; display: inline-block; padding: 10px 15px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">
+    Download presentation schedule pdf
+ </a><br>
+    <canvas id="pdf-canvas" style="border:1px solid #ccc; width:80%;"></canvas>
+    <div id="page-controls" style="text-align:center; margin-top:10px;">
+     <div id="page-controls" class="text-center mt-3">
+  <button onclick="prevPage()" class="btn btn-primary me-2">
+    <i class="bi bi-arrow-left"></i> Previous
+  </button>
+  <span class="fw-bold">Page <span id="page-num">1</span> of <span id="page-count">--</span></span>
+  <button onclick="nextPage()" class="btn btn-primary ms-2">
+    Next <i class="bi bi-arrow-right"></i>
+  </button>
+</div>
+
+    </div>
+    
+  </div>
+
+</section>
+
+    <section id="registration" class="content-section">
+      
+      <div class="col col-sm ml-5 mr-5 mt-5">
+        <h3 class="text-center border-bottom mb-4">TERMS & CONDITIONS</h3>
+      
+        <ul class="mb-3">
+          <li>All registrations should be made ONLINE only.</li>
+          <li>No part-payment is entertained.</li>
+          <li>Registered and presented papers ONLY are entitled for inclusion in the conference proceedings.</li>
+        </ul>
+      
+        <h3 class="text-center border-bottom mb-3">Registration Fee</h3>
+      
+        <table class="table table-striped fees-table">
+          <thead>
+            <tr>
+              <th style="background-color:black; color: #fff;">Participant/Authors</th>
+              <th style="background-color:black; color: #fff;">Registration Fees</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Academician / Faculties</td>
+              <td><strong>Rs. 10000/-</strong></td>
+            </tr>
+            <tr>
+              <td>Students/Research scholars/CSI Members</td>
+              <td><strong>Rs. 9000/-</strong></td>
+            </tr>
+            <tr>
+              <td>Author from industry</td>
+              <td><strong>Rs. 12000/-</strong></td>
+            </tr>
+            <tr>
+              <td>Foreign Author</td>
+              <td><strong>$150 USD</strong></td>
+            </tr>
+            <tr>
+              <td>Workshop Registration/Conference Attendees</td>
+              <td><strong>Rs. 500/-</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h4 class="text-center mt-4">Number of pages are limited to 10 pages, each additional page will be charged Rs 1000/-</h4>
+        <div>
+          <p class="text-center" id="blink" style="color: red; font-size: 20px; font-weight: bold; font-family: sans-serif;">
+        
+           Details of fee waivers for Foreign Authors are given below.
+          </p>
+          
+<p>
+
+  <b>International Author Incentive:</b><br>
+    Manuscripts submitted with contributing authors affiliated with international institutions will receive a registration <b>fee waiver of $40</b>  as a token of encouragement for global research collaboration
+            </p>
+
+  <p>
+    <b>Incentive for International Submissions:</b><br>
+    Manuscripts of pure international origin—with all contributing authors affiliated exclusively with international institutions—will be eligible for a registration <b>fee waiver of $50</b> as part of our effort to promote and support global research collaboration.
+  </p>
+      </div>
+
+      
+        <h3 class=" border-bottom mt-4"><span class="text-danger"><strong>Cancellations and Refunds</strong></span></h3>
+      
+        <ul class="mt-3">
+          <li>Once registered, cancellation or refund is not entertained.</li>
+        </ul>
+      </div>
+      
+    </section>
+<!-- Sections for Committees -->
+<section id="chief-patrons" class="content-section">
+  <div class="row">
+    <div class="col ml-5 mr-5 mt-5">
+        <h3 class="border-bottom fw-bold">CHIEF PATRONS</h3>
+        <ul>
+            <li style="font-size:18px">Sri. D.Suresh Babu, President, Vignana Jyothi Society.</li>
+            <li style="font-size:18px">Sri. Durga Prasad Kode, General Secretary, Vignana Jyothi Society.</li>
+        </ul>
+    </div>
+</div>
+</section>
+
+<section id="patrons" class="content-section">
+  <div class="col ml-5 mr-5 mt-5">
+    <h3 class="border-bottom fw-bold">PATRONS</h3>
+    <ul>
+        <li style="font-size:18px">Dr. C.D.Naidu, Principal, VNR VJIET.</li>
+        <li style="font-size:18px">Dr. B.Chennakesava Rao, Director-Advancement, VNR VJIET.</li>
+        <li style="font-size:18px">Dr. A.Subhananda Rao, Director-Research & Development, VNR VJIET.</li>
+    </ul>
+</div>
+</section>
+
+<section id="convenor" class="content-section">
+ <!-- Convenor Section -->
+ <div class="col ml-5 mr-5 mt-5">
+  <h3 class="border-bottom fw-bold">CONVENOR</h3>
+  <ul>
+      <li style="font-size:18px">Dr. S.Nagini, Professor, VNR VJIET, Hyderabad, India.</li>
+      <li style="font-size:18px">Dr. A Brahmananda Reddy, Associate Professor, VNR VJIET, Hyderabad, India.</li>
+  </ul>
+</div>
+</section>
+
+<section id="programme-chair" class="content-section">
+  <div class="row">
+    <!-- Programme Chair Section -->
+    <div class="col ml-5 mr-5 mt-5">
+        <h3 class="border-bottom fw-bold">PROGRAMME CHAIR</h3>
+        <ul>
+          <li style="font-size:18px">Dr. N. V. Sailaja, Senior Assistant Professor,  VNR VJIET, Hyderabad, India.</li>
+          <li style="font-size:18px">Dr. R. Vijaya Saraswathi, Senior Assistant Professor, VNR VJIET, Hyderabad, India.</li>
+      </ul>
+        </ul>
+    </div>
+</div>
+</section>
+
+<section id="programme-co-chair" class="content-section">
+  <div class="row">
+    <!-- Programme Co-Chairs Section -->
+    <div class="col ml-5 mr-5 mt-5">
+        <h3 class="border-bottom">PROGRAMME CO-CHAIRS</h3>
+        <ul>
+          <li style="font-size:18px">Dr. R.Vasavi, Senior Assistant Professor, VNR VJIET, Hyderabad, India.</li>
+          <li style="font-size:18px">Dr. N.Sandeep Chaitanya, Assistant Professor, VNR VJIET, Hyderabad, India.</li>
+            <li style="font-size:18px">Dr. P. Tejaswi, Assistant Professor,  VNR VJIET, Hyderabad, India.</li>
+            <li style="font-size:18px">Dr. K.Srinivas, Senior Assistant Professor, VNR VJIET, Hyderabad, India.</li>
+        </ul>
+    </div>
+</div>
+</section>
+
+<section id="general-chair" class="content-section">
+  <div class="row">
+        
+    <div class="col ml-5 mr-5 mt-5">
+        <h3 class="border-bottom">GENERAL CHAIR</h3>
+
+<ul>
+
+  <li>Dr. V Baby, Associate Professor & HoD in Department of CSE, VNRVJIET, Hyderabad, India. </li>	
+  <li>	Dr. Bhumika Gupta, Professor, ITM University, France.</li>
+</ul>
+
+    </div>
+</div>
+</section>
+
+<section id="honorary-chair" class="content-section">
+  <div class="row">
+        
+    <div class="col ml-5 mr-5 mt-5">
+        <h3 class="border-bottom">HONORARY CHAIR</h3>
+<ul>
+<li style="font-size:18px">	Prof. Lakhmi C. Jain, University of Technology Sydney, Australia & Founder KES International, Australia.</li>
+<li style="font-size:18px">		Prof. Valentina E. Balas	Senior Member IEEE, AurelVlaicu, University of Arad, Romania</li>
+<li style="font-size:18px">	Dr. A. Govardhan, Professor in CSE & Rector JNTUH, Hyderabad, India.</li>
+<!--<li style="font-size:18px"><b>Mr V Rajanna, Senior Vice President & Global Head – Communications, Media and Technology Business Group, TCS.</b></li>
+<li style="font-size:18px"><b>Dr S Ramachandram, Vice Chancellor, Anurag University, Hyderabad.</b></li>-->
+</ul>        </div>
+</div>
+</section>
+
+<section id="editorial-board" class="content-section">
+  <div class="row">
+       
+    <div class="col ml-5 mr-5 mt-5">
+        <h3 class="border-bottom">EDITORIAL BOARD</h3>  
+<ul> 	
+<li>Dr. A Brahmananda Reddy, Associate Professor, Department of CSE, VNRVJIET, Hyderabad, Telangana, India. </li>
+<li>Dr. N Venkata Sailaja, Senior Assistant Professor, Department of CSE, VNRVJIET, Hyderabad, Telangana, India. </li>
+<li>Prof. Roumiana Kountcheva, Vice President of TK Engineering, Sofia, Bulgaria.</li>
+<li>Dr. R Vijaya Saraswathi, Senior Assistant Professor, Department of CSE, VNRVJIET, Hyderabad, Telangana, India.</li> 
+<li>Dr. K. Srujan Raju, Professor, HoD-CSE & Dean (R&D), CMR Technical Campus, Hyderabad, Telangana, India</li>
+    </ul>        </div>
+</div>
+﻿<div class="container-fluid">
+
+
+
+
+</div>
+</section>
+
+<section id="international-advisory-committee" class="content-section">
+  <div class="row"> 
+    <div class="col ml-5 mr-5 mt-5">
+        <h3 class="border-bottom">INTERNATIONAL ADVISORY COMMITTEE</h3>
+<ul>
+  <li>Machavarapu Venkata Rao, Associate Vice President, Sunsoft Solutions Inc., Alpharetta, Georgia, USA</li>
+  <li>Sathishkumar V E, School of Engineering and Technology, Sunway University, Malaysia</li>
+  <li>Dr. Bhumika Gupta, Professor, ITM University France</li>
+  <li>Said Adssar, ITM University France</li>
+  <li>Thierno Tounkara, ITM University France</li>
+  <li>Noel Crespi, ITM University France</li>
+  <li>Dr. Pawan Jain, Virginia Commonwealth University, USA</li>
+  <li>Dr. Nitin Naik, Aston University Birmingham, UK</li>
+  <li>Dr. Dharam Singh Jat, Namibia University of Science and Technology, Namibia</li>
+  <li>Bharti Motwani, University of Maryland, USA</li>
+  <li>Prasad gandham, Principal Manager, Microsoft, Salt Lake City, USA.</li>
+<li> Dr.T.Rama Krishna, Research Scientist, Molecular Diagnostic Research Laboratory, Center for Sensory Neuroscience, Boys Town National Research Hospital, Omaha, NE 68010, USA. </li>
+<li>Narasimha Rao Vajjhala, Professor and Chair, Computer Science Department,American University in Bulgaria.</li>
+<li>Prof.Ganga Raju Gadda,Brain Pool Professor,Chung-Ang University,South Korea</li>
+<li>Dr. Margarita N. Favorskaya, Siberian State Aerospace university of Science and Technology, Russian federation</li>
+<li>		Prof. Valentina E. Balas	Senior Member IEEE, AurelVlaicu, University of Arad, Romania</li>
+<li>Dr. Sivaram Rajeyyagari, College of Computing and Information Technology, Shaqra University, Saudi Arabia</li>
+<li>Dr. P.N Suganta, Nanyang Technological University, Singapore</li>
+<li>Prof. Roman Senkerik, Head of the evolutionary computing research group, Czechia</li>
+<li>  Dr. Raghava Rao Mukkamala, CBDA, CBS, Denmark</li>
+<li>Dr. Andre Coy, The University of the West Indies Mona, Jamaica</li>
+<li>Dr. Sree Ganesh Thottempudi, SRH University, Heidelberg, Germany</li>
+<li>Dr. Gunjan Mansingh, The University of the West Indies Mona, Jamaica</li>
+<li>Dr Rakhee, The University of the West Indies Mona, Jamaica</li>
+
+<li>Dr. Naresh Kshetri, School of Business & Technology, Emporia State University, Emporia, Kansas, USA</li>
+<li>Dr. Rajasekaran S , University of Technology and Applied Sciences, Ibri, Al Dhahira, Sultanate of Oman </li>
+<li>Dr. Mustafa Mohammed, university of Illinois at Chicago, USA.</li>
+<li>Dr. Tu Nguyen,Kennesaw State University,Marietta, Georgia, United States.</li>
+<li>Dr. Praveen Kumar Donta,Department of Computer and Systems Sciences,Stockholm University,Nodhuset, Borgarfjordsgatan 12, 164 25 Kista, Stockholm, Sweden</li>
+<li>Dr. Yu-Chen Hu,Department of Computer Science, Tunghai University,Taiwan Boulevard,Taichung City, 407224, Taiwan, Republic of China</li>
+
+<li> Abhishek Shukla, Principal Software Engineer at Dell Technologies,  USA</li>
+
+</ul>        
+</div>
+</div>
+</section>
+
+<section id="national-advisory-committee" class="content-section">
+  <div class="row">
+        
+    <div class="col ml-5 mr-5 mt-5">
+      <h3 class="border-bottom">National Advisory Committee</h3>
+<ul>
+  <li>Gunasekaran Raja,Professor,Department of Computer Technology,Anna University,Chennai</li>
+<li>Dr.Rajendra Boopathy Sadayan,Emeritus Professor,Department Of Mechanical Engineering,College Of Engineering,Guindy,Anna University,Chennai</li>
+<li>A.Arockiarajan,Professor,Department of Applied Mechanics,IIT Madras</li>
+<li>Ramakrishnan Swaminathan,Professor,Department of Applied Mechanics,IIT Madras</li>
+<li>Dr.A.Chandra Sekhara Rao,Associate Professor,IIT Dhanbad</li>
+<li>Dr.B Annappa,Professor, CSE, NIT, Surathkal</li>
+<li>Dr.S.Vasundra,Professor,JNTUA-CE</li>
+<li>Dr. Pilli Emmanuel Subhakar, MNIT, Jaipur</li>
+<li>Dr. Saroj Biswas, NIT, Silchar</li>
+<li>Dr. Aswani Kumar,  VIT, Vellore</li>
+<li>Dr. Shashikant Patil 	,Senior Director and Professor ,Atlas SkillTech University,Mumbai. 	</li>
+<li>Prof. Rajanikanth Aluvalu,	Director,	Symbiosis Institute of Technology, Hyderabad campus, Symbiosis International University, Pune.
+  </li>
+<li>Dr. T.V Rajini Kanth , SNSIT, Hyderabad</li>
+<li>Dr Supreethi K P, JNTUCEH, Hyderabad</li>
+<li>Dr Maheswara Rao Valluri, Founder and Cryptologist,QuinfoSystems, Hyderabad</li>
+<li>Dr Sriram Birudavolu, cyber Security, Centre of Excellence, Data Security Council of India</li>
+<li>Dr. K.  Rajakumar, School of Computer Science and Engineering, VIT,Vellore.</li>
+<li>Shri Raju L Kanchibhotla, CSI, India</li>
+<li>Dr. N. J. Rajaram, CSI, India</li>
+<li>Dr. Atul Negi, Professor, Chairman, IEEE Hyderabad Section, School of compute and Information Science University of Hyderabad  </li>
+<li>Riyaz Syed, Founder and Chief Scientific officer, JHUB Incubator, JNTUH</li>
+<li>Dr T M Balakrishnan Nair, Scientist-G & Group Director, OMARS, Indian National Centre for ocean Information Services.</li>
+<li>Dr.Venkatesan, National Institute of Technology,  Puducherry.</li>
+<li>Dr. U. Srinivasulu Reddy, NIT Tiruchirapally.</li>
+<li>Dr V. Kamakshi Prasad, JNTUH, Hyderabad.</li>
+<li>Dr.D.Vasumathi, Director of Foreign Relations, , JNTUCEH, Hyderabad.</li>
+<li>Dr. Swagatam Das, Indian Statistical Institute, Kolkata, India</li>
+<li>Dr A. Suresh Babu, JNTUA, Anantapuram.</li>
+<li>Dr B. Vishnu Vardhan, JNTUHCEM, Manthani.</li>
+<li>Dr C Shoba Bindhu, JNTUA, Anantapuramu.</li>
+<li>Dr. V.A Narayana, Principal, CMRCET, Hyderabad.</li>
+<li>Dr. K Vijaya Kumar, S.R University, Hyderabad.</li>
+<li>Dr. P. Vijaya Pal Reddy, MEC, Hyderabad.</li>
+<li>Dr. Thilak vadicherla, Indian Patent Office, Chennai</li>
+<li>Dr.A.P. Siva Kumar, JNTUA, Anantapuramu</li>
+<li>Anil Sukheja, Scientist “E” ISRO Ahmadabad.</li>
+<li>Dr A.V.Krishna Prasad, MVSR Engineering College, Hyderabad</li>
+<li>Dr. R.B.V.Subramaanyam,Professor,Department of CSE,NIT Warangal</li>
+<li>Dr.Chittaranjan hota,Senior Professor, Computer Science Dept, Birla Institute of Technology & Science, Pilani,Hyderabad</li>
+<li>Dr.Chandrasekaran K,Professor of CSE,NITK,surathkal</li>
+<li>Dr.Bharath Kumar,Associate Professor,IIT Tirupati</li>
+
+</ul>
+</div>
+</div>
+</section>
+<section id="program-committee" class="content-section">
+  <div class="row">
+    <div class="col ml-5 mr-5 mt-5">
+        <h3 class="border-bottom">PROGRAM COMMITTEE</h3>
+<ul>
+<li>	Dr. S. Nagini, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. B.V. Kiranmayee, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. C. Kiran Mai, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. G. Ramesh Chandra, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. P. Neelakantan, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. V. Baby, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. P. V. Siva Kumar, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. M.Gangappa, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. A. Brahmananda Reddy, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. Deepak Sukheja, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. Anjusha Pimpalshende, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. D. N. Vasundhara, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. N.V.Sailaja, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. R.Vasavi, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. R.Vijaya Saraswathi, VNR VJIET, Hyderabad, India.	</li>
+<li> Dr. P.Radhika, VNR VJIET, Hyderabad, India.</li>
+<li>	Dr. Ravi Kanth. M, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. P.Bharath Kumar Chowdary, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. K. Srinivas, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. Chalumuru Suresh, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. K. Venkata Ramana, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. K.Bheemalingappa, VNR VJIET, Hyderabad, India.	</li>
+
+</ul>
+
+    </div>
+</div>
+</section>
+
+<section id="technical-committee" class="content-section">
+  <div class="row">
+        
+    <div class="col ml-5 mr-5 mt-5">
+        <h3 class="fw-bold">TECHNICAL COMMITTEE</h3>
+
+<ul>
+  <li>Machavarapu Venkata Rao, Associate Vice President, Sunsoft Solutions Inc., Alpharetta, Georgia, USA</li>
+
+<li>Dr. Margarita N. Favorskaya, Siberian State Aerospace university of Science and Technology, Russian federation</li>
+<li>Dr. Lindon Falconer, Lecture & Deputy Dean, The University of the West Indies Mona, Jamaica.</li>
+<li>Dr. Gunjan Mansingh, The University of the West Indies Mona, Jamaica</li>
+<li>Dr Rakhee, The University of the West Indies Mona, Jamaica</li>
+<li>Dr. Andre Coy, The University of the West Indies Mona, Jamaica</li>
+
+
+<li>Dr. T.V Rajini Kanth , Professor in CSE & Dean R&D, SNSIT, Hyderabad, India</li>
+<li>Dr Supreethi K P, Professor, JNTUCEH, Hyderabad, India</li>
+<li>Dr Maheswara Rao Valluri, Founder and Cryptologist,QuinfoSystems, Hyderabad</li>
+<li>Mr. T. Sharath Babu, CSI, Hyderabad, India</li>
+<li>Dr. A.V. Krishna Prasad, CSI, Hyderabad Chapter, India</li>
+<li>Dr Sriram Birudavolu, cyber Security, Data Security Council of India</li>
+<li>Baisakhi Chakraborty, NIT, Durgapur, India </li>
+<li>Dr. E. Suresh Babu, National Institute of Technology Warangal, Telangana, India</li>
+<li>Dr. Earnest Paul Ijjina, National Institute of Technology Warangal, India</li>
+<li>Dr.K. Jairam Naik, NIT,Raipur, India.</li>
+
+<li>Dr. Rico S. Santos, Technological University of the Philippines-Taguig, Philippines</li>
+<li>Maracris M. Lappay, Technological University of the Philippines-Taguig, Philippines</li>
+<li>Dr. Annavarapu Chandra sekhar Rao, IIT, Dhanbad, India</li>
+<li>Dr.Hemant Kasturiwale ,Professor & Head of Department of Electronics and Computer Science Thakur college of Engineering and Technology, Mumbai.</li>
+  <li>Dr. Preeti Rai, Professor in Department of CSE-AIML at Gyan Ganga Institute of Technology and sciences ,Jabalpur.</li>
+  <li>Dr. Somnath Thigale, 	Professor and Head ,Fabtech Technical Campus, College Of Engineering And Research, Maharashtra, India.</li>
+  <li>Dr Puli Danaiah 	Professor & Head	Srinivasa institute of engineering and technology Amalapuram </li>
+  <li>Dr. Krishna Kumar Jha, Associate Professor & Head Of Department , Computer Science & Engineering at Swami Vivekananda Institute of Science and Technology,West Bengal, India </li>
+<li>Dr. Atul Negi, Professor, Chairman, IEEE Hyderabad Section, School of compute and Information Science University of Hyderabad, India  </li>
+<li>Riyaz Syed, Founder and Chief Scientific officer, JHUB Incubator, JNTUH, India</li>
+<li>Dr T M Balakrishnan Nair, Scientist-G & Group Director, OMARS, Indian National Centre for Ocean Information Services., Hyderabad, India</li>
+<li>Dr. B. Sailaja, Principal Scientist, ICAR-IIRR, Hyderabad, India</li>
+
+
+<li>Dr. Y Padmasai, VNRVJIET, Hyderabad, India</li>
+<li>Dr. K. Anuradha, VNR VJIET, Hyderabad, India</li>
+<li>Dr. G. Ramesh Chandra, VNR VJIET, Hyderabad, India</li>
+<li>Dr.D Pardha saradhi, VNR VJIET, Hyderabad, India</li>
+<li>Dr. D. Srinivasa Rao, VNR VJIET, Hyderabad.</li>
+<li>Dr. N Sandhya, VNR VJIET, Hyderabad.</li>
+<li>Dr. Siva Skndha Sanagala, CMRCET, Hyderabad, India.</li>
+<li>Dr. Ravichander Janapati, SR University, Warangal</li>
+<li>Dr. M. Rajasekar, VNRVJIET, Hyderabad.</li>
+<li>Dr.M. A Hameed, Osmania University, India</li>
+<li>Dr.Rakesh Matam, IIIT Guwahati, India</li>
+<li>Dr.Venkanna U,  IIIT Nayaraipur, India</li>
+<li>Dr. C. Kiranmai, VNR VJIET, Hyderabad, India</li>
+<li>Dr.B.V.Kiranmayee, VNR VJIET, Hyderabad, India</li>
+<li>Dr. S. Nagini, VNRVJIET, Hyderabad, India.</li>
+<li>Dr. A. Brahmananda Reddy, VNRVJIET, Hyderabad, India.</li>
+<li>Dr. P.V.Siva Kumar,  VNRVJIET, Hyderabad, India.</li>
+<li>Dr. D. N. Vasundhara, VNRVJIET, Hyderabad, India</li>
+<li>Dr. Deepak Sukheja, VNRVJIET, Hyderabad, India</li>
+<li>Dr. Rajkumar. S,  VIT, Vellore.</li>
+<li>Dr. Ilaiah Kavati, MLRIT, Hyderabad.</li>
+<li>Dr. Pilli Emmanuel Subhakar, MNIT, Jaipur</li>
+<li>Dr. Saroj Biswas, NIT, Silchar</li>
+<li>Dr. Aswani Kumar, Professor, VIT, Vellore</li>
+<li>Dr. V. Baby, VNRVJIET, Hyderabad, India.</li>
+
+<li>Dr.  N. V. Sailaja, VNRVJIET, Hyderabad, India</li>
+<li>Dr. R. Vijaya Saraswathi, VNRVJIET, Hyderabad, India</li>
+<li>Dr.P.Radhika, VNRVJIET, Hyderabad, India</li>
+<li>Dr.M Madhubala, VNRVJIET, Hyderabad, India</li>
+<li>Dr. D. Ganesh,Ph.D,Associate Professor of CSE,Mohan Babu University</li>
+<li>Dr. J. Suresh Babu, Professor of Computer Applicaitons, Mohan Babu University</li>
+<li>Dr. C. Sushama,Ph.D,Associate Professor of CSE,Mohan Babu University, Tirupati, Andhra Pradesh, India.</li>
+<li>Dr. K.Dilli Babu,Ph.D,Associate Professor of CSE,Mohan Babu University, Tirupati, Andhra Pradesh, India.</li>
+<li>Dr. K. Hari Krishna,Ph.D, Associate Professor of CSE,Mohan Babu University, Tirupati, Andhra Pradesh, India.</li>
+<li>Otis Ferguson Jr, University of the West Indies, St. Augustine</li>
+<li>Dr. Sriparna Saha,Associate Professor, Indian Institute of Technology, Patna</li>
+<li>Dr. M.Srinivas,Assistant Professor,Department of CSE,National Institute of Technology, Warangal</li>
+<li>Dr. Noor Mahammad Sk,Assistant Professor,Indian Institute of Information Technology, Design and Manufacturing,(IIITD&M) Kancheepuram, Chennai</li>
+</ul>        </div>
+</div>
+</section>
+
+<section id="organizing-committee" class="content-section">
+  <div class="row">
+        
+    <div class="col ml-5 mr-5 mt-5">
+        <h3>ORGANIZING COMMITTEE</h3>
+
+<ul>
+<li>	Dr. S. Nagini  , VNR VJIET, Hyderabad, India.</li>	
+<li>	Dr.P.Neelakantan , VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. C. Kiran Mai , VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr.G. Ramesh Chandra , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr.B.V. Kiranmayee , VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr.M.Madhubala, VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr.V. Baby , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr.M. Gangappa , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr. P. V. Siva Kumar	, VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr.A.B.N. Reddy	, VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr.Deepak Sukheja	, VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr.Anjusha P , VNR VJIET, Hyderabad, India.	</li>	
+<li>	A. Madhavi , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr.N.V.Sailaja , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr.D.N. Vasundhara , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr.R. Vasavi , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr.R.Vijaya  Saraswathi	, VNR VJIET, Hyderabad, India.	</li>	
+
+<li> Dr.P.Radhika , VNR VJIET, Hyderabad, India.	</li>	
+<li>	T. Gnana Prakash , VNR VJIET, Hyderabad, India.	</li>	
+
+<li>	Dr.M.Ravi Kanth	, VNR VJIET, Hyderabad, India.	</li>	
+<li>	S.Jahnavi , VNR VJIET, Hyderabad, India.	</li>	
+<li>	N.Lakshmi Kalyani , VNR VJIET, Hyderabad, India.	</li>	
+<li>	N.Sandeep Chaitanya , VNR VJIET, Hyderabad, India.	</li>	
+<li>	N.Sarika , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr.Tejaswi.P , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr.P.Bharath Kumar , VNR VJIET, Hyderabad, India.	</li>	
+<li>	L.Jai Vinita , VNR VJIET, Hyderabad, India.	</li>	
+<li>	P.Rama Krishna , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr.K.Bheemalingapa , VNR VJIET, Hyderabad, India.	</li>	
+<li>	L.Indira , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr.K.Srinivas , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr.CH.Suresh , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Kriti Ohri , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr.K.Venkata Ramana , VNR VJIET, Hyderabad, India.	</li>	
+<li>	K.Jhansi Lakshmi Bai , VNR VJIET, Hyderabad, India.	</li>	
+<li>	M.V. Krishna Rao  , VNR VJIET, Hyderabad, India.	</li>	
+
+<li>	CH.Sri Sumanth , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Nyemeesha S , VNR VJIET, Hyderabad, India.	</li>	
+<li>	P.Jyothi , VNR VJIET, Hyderabad, India.	</li>	
+<li>	K.Bhagya Rekha , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Shaik Abul Hameed , VNR VJIET, Hyderabad, India.	</li>	
+<li>	P.Prasanna , VNR VJIET, Hyderabad, India.	</li>	
+<li>	G.Lakshmi Deepthi , VNR VJIET, Hyderabad, India.	</li>	
+<li>	K.Haripriya , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Sudeshna.S , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Sudheer Benarji.P , VNR VJIET, Hyderabad, India.	</li>	
+
+<li>	Dr. K.Sai Madhuri , VNR VJIET, Hyderabad, India.	</li>	
+<li>	I.Ravindra Kumar , VNR VJIET, Hyderabad, India.	</li>	
+<li>	B.Prathusha , VNR VJIET, Hyderabad, India.	</li>	
+
+
+<li>	G.Gouthami , VNR VJIET, Hyderabad, India.	</li>	
+<li>	R.Bhavani , VNR VJIET, Hyderabad, India.	</li>	
+<li>	M.Srikanth , VNR VJIET, Hyderabad, India.	</li>	
+<li>	K.Akhil	, VNR VJIET, Hyderabad, India.	</li>	
+
+<li>	P.Praveen , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Dr. V.Muniraju Naidu , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Ch.Sandhya Rani	, VNR VJIET, Hyderabad, India.	</li>	
+<li>	V.Vijaya Bhaskar , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Ch.Suresh Kumar Raju , VNR VJIET, Hyderabad, India.	</li>	
+<li>	P.Rajesh , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Deepa T	, VNR VJIET, Hyderabad, India.	</li>	
+<li>	S.K.Saddam Hussain , VNR VJIET, Hyderabad, India.	</li>	
+<li>	K.Sri Rama Murthy , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Thirupathi Nanuvala , VNR VJIET, Hyderabad, India.	</li>		
+<li>	M.Ram Babu , VNR VJIET, Hyderabad, India.	</li>	
+<li>	V.Dhanalakshmi , VNR VJIET, Hyderabad, India.	</li>	
+<li>	B. Usha Rani , VNR VJIET, Hyderabad, India.	</li>	
+<li>	A.Katyayani , VNR VJIET, Hyderabad, India.	</li>	
+<li>	V.Vijaya Lakshmi , VNR VJIET, Hyderabad, India.	</li>	
+<li>	B.Suneetha , VNR VJIET, Hyderabad, India.	</li>	
+<li>	P.Ramesh , VNR VJIET, Hyderabad, India.	</li>	
+<li>	P.Lalitha Kumari , VNR VJIET, Hyderabad, India.	</li>	
+
+<li>	N.Naga Raju , VNR VJIET, Hyderabad, India.	</li>	
+<li>	P.Praveen , VNR VJIET, Hyderabad, India.	</li>	
+<li>	Ch. Jyothi , VNR VJIET, Hyderabad, India.	</li>	
+<li>	K.Sreedhar , VNR VJIET, Hyderabad, India.	</li>	
+
+</ul>        </div>
+</div>
+﻿<div class="container-fluid">
+
+<div class="row flex-container footerimage">
+<img src="./images/hyd.png" alt="" width="auto">
+</div>
+
+
+</div>
+</section>
+
+<section id="conference-proceedings-committee" class="content-section">
+  <div class="row">
+        
+    <div class="col ml-5 mr-5 mt-5">
+        <h3>CONFERENCE PROCEEDINGS  COMMITTEE</h3>
+
+<ul>
+<li>	Dr. D. N. Vasundhara, Department of CSE VNR VJIET, Hyderabad, India.	</li>
+<li>	Mrs. G. Laxmi Deepthi, Department of CSE VNR VJIET, Hyderabad, India.	</li>
+<li>	Mrs. K.Bhagya Rekha, Department of CSE VNR VJIET, Hyderabad, India.	</li>
+<li>	Mrs. K.Hari Priya, Department of CSE VNR VJIET, Hyderabad, India.	</li>
+<li>	Mrs. S.Sudeshna, Department of CSE VNR VJIET, Hyderabad, India.	</li>
+<li>    Mrs. Ch.Sandhya Rani, VNR VJIET, Hyderabad, India.</li>
+<li>	Mrs. A. Katyayani, Department of CSE VNR VJIET, Hyderabad, India.	</li>
+<li>	Mrs. P.Lalitha Kumari,Department of CSE VNR VJIET, Hyderabad, India.	</li>
+<li>	Mrs. B.Suneetha, Department of CSE VNR VJIET, Hyderabad, India.	</li>
+
+
+</ul>        </div>
+</div>
+</section>
+
+<section id="review-committee" class="content-section">
+  <div class="row">
+        
+    <div class="col ml-5 mr-5 mt-5">
+        <h3>REVIEW COMMITTEE</h3>
+
+<ul>
+  
+    <li>Dr. Bhumika Gupta, Professor, ITM University France</li>
+    <li>Said Adssar, ITM University France</li>
+    <li>Thierno Tounkara, ITM University France</li>
+    <li>Noel Crespi, ITM University France</li>
+    <li>Dr. Pawan Jain, Virginia Commonwealth University, USA</li>
+    <li>Dr. Nitin Naik, Aston University Birmingham, UK</li>
+    <li>Dr. Dharam Singh Jat, Namibia University of Science and Technology, Namibia</li>
+    <li>Bharti Motwani, University of Maryland, USA</li>
+    <li>Prof. (Dr.) P Lalitha Surya Kumari, K L Deemed to be University, Aziznagar Campus, Hyderabad, Telangana, India.</li>
+    <li>Dr K Prasanna Lakshmi, Gokaraju Rangaraju Institute of Engineering and Technology, Telangana, India.</li>
+    <li>Dr B Krishna, Balaji Institute of Technology and Science, Telangana, India.</li>
+    <li>Dr.V.Akila, Gokaraju Rangaraju Institute of Engineering and Technology, Telangana, India.</li>
+    <li>Dr.B.V.Seshu Kumari, VNRVJIET, Telangana, India.</li>
+    <li>Dr. Yeresieme Suresh, Ballari Institute of Technology & Management, Ballari, Karnataka, India.</li>
+    <li>Mohammed Qayyum, King Khalid University, Aseer, Saudi Arabia.</li>
+    <li>Dr. V Nagaveni, AMCEC, Karnataka, India.</li>
+    <li>Delshi Howsalya Devi, Karpaga Vinayaga College of Engineering and Technology, Tamil Nadu, India.</li>
+    <li>Dr. Y Jeevan Nagendra Kumar, GRIET, Telangana, India.</li>
+    <li>Dr. SambasivaRao Baragada, M.V.S Government Arts and Science College, MahabubNagar, Telangana, India.</li>
+    <li>Angshuman Jana, Assam, India.</li>
+    <li>Dr. Narayana Rao Appini, NBKR Institute of Science and Technology, Andhra Pradesh, India.</li>
+    <li>Mohammed Shafiul Alam Khan, University of Dhaka, Dhaka, Bangladesh.</li>
+    <li>Dr. D Kalyani, VNRVJIET, Telangana, India.</li>
+    <li>Dr. Enugala Raju, Sumathi Reddy Institute of Technology for Women, Telangana, India.</li>
+    <li>Dr. Rajeshree Khande, Sri Balaji University, Maharashtra, India.</li>
+    <li>Ravinder Reddy Baireddy, Sreenidhi Institute of Science and Technology, Telangana, India.</li>  
+ 
+<li>Dr.Radhakrishnan Palanikumar, King Khalid University, Saudi Arabia</li>
+<li>Dr. H Shaheen, University of West London, RAK</li>
+<li>Dr. Sudhakar T, Lovely Professional University, Punjab, India</li>
+<li>Dr.Sumit Mishra, IIIT Guwahati, Assam, India</li>
+<li>Dr. Surekha P, Amrita School of Engineering, Bengaluru, India</li>
+<li>Lokesh Kumar Laddhani, Vikram University, Ujjain, India</li>
+<li>Dr. Chanchala Joshi, Government collage Kaytha, Ujjain</li>
+<li>Vivek Yelleti, NIT Warangal, India</li>
+<li>Dr. Keshav Kaushik, University of Petrolium and Energy Studies, Dehradun, India</li>
+<li>Reetu Gupta, Indore Institute of Science and Technology, Indore, India</li>
+<li>Haritha Akkineni, PVP Sidddhartha Institute of Technology, Vijayawada, India</li>
+<li>Dr.Megha Bushan, DIT University, Dehradun, India</li>
+<li>Dr. B. Raman Reddy, CBIT, Hyderabad, India</li>
+<li>Prof. Ketan Sarvakar, Ganpat University, Mehsana, Gujarat, India</li>
+<li>Dr. Sreekanth Puli, GITAM Deemed to be University, Visakhapatnam, India</li>
+<li>Dr. T Ananth Kumar, IFET College of Engineering, Tamilnadu, India</li>
+<li>Dr. Vivek Upadhyaya, Poornima University, Jaipur, India</li>
+<li>Dr. Revathi G, Sastra Deemed University, Thanjavur, India</li>
+<li>Dr, Dattatray Gandhmal, N B Navale Sinhgad College of Engineering, Solapur, India</li>
+<li>Dr. Bhupendra Kumar Pandya, Vikram University, Ujjain, India</li>
+<li>Dr. S Rama Krishna, GITAM, Hyderabad, India</li>
+<li>Dr. Kottapalle Prasanna, GNITS, Hyderabad, India</li>
+<li>Dr.Vikkurty Sireesha, Vasavi College of Engineering, Hyderabad, India</li>
+<li>Delshi Ramamoorthy, Bharat Institute of Engineering and Technology, Hyderabad, India</li>
+<li>Dr. Jitendra Choudhary, Medi-Caps University, Madhya Pradesh, India</li>
+<li>Dr. M. V. Kamal, Malla Reddy College of Engg. & Technology</li>
+<li>Dr. B.V. Devendra Rao, CSIT-Indian Institute of Chemical Technology, Taranaka, Hyderabad</li>
+<li>Dr P. Mukesh, Scientist ( SS), ICAR-IIMR, HYDERABAD </li>
+<li>Dr. Rafath Samrin, Deccan College of Engineering & Technology</li>
+<li>Dr Ramesh Cheripelli, Vidya Jyothi Institute of Technology</li>
+<li>Dr. P. Srinivasa Rao, Jain University, Bangalore</li>
+<li>Dr. G Uday Kiran, B. V. Raju Institute of Technology</li>
+<li>Dr. K. Prem Kumar, ACE Engineering College</li>
+<li>Dr. Sarfraz Hussain, REVA University, Bangalore.</li>
+<li>Dr.B.Ravi Teja, GITAM Deemed to be University Telangana, India</li>
+<li>Dr. Sridhar Manda, Balaji Institute of Technology and Science, Telangana, India</li>
+<li>Dr.Vuyyuru Krishna Reddy, GITAM (Deemed to be University), Andhra Pradesh, India</li>
+<li>Dr.B. Tirapathi Reddy, Siddhartha Institute of Technology, Andhra Pradesh, India</li>
+<li>Dr. Y. Ambica, JNTU Hyderabad, Telangana, India</li>
+<li>Dr. GNV Rajareddy, GITAM University, Andhra Pradesh, India</li>
+<li>Appala Srinuvasu Muttipati , Institute of Technology and Sciences, Andhra Pradesh, India</li>
+<li>Dr. A V S Pavan Kumar , GIET University, Odisha, India</li>
+<li>Dr . George Fernandez , Dayananda Sagar University,  Karnataka, India </li>
+<li>Dr. Virajan Verma, Jain University, Bengaluru, Karnataka, India </li>
+<li>Dr P Srinivasa Rao, Jain University, Karnataka,India</li>
+<li>Ranjini K , Dayananda Sagar University, Karnataka, India </li>
+<li>Dr. Ch.Mahender Reddy, GITAM University, Telangana,India</li>
+<li>Dr. Md Jaffar Sadiq , JNTUH, Telangana ,India</li>
+<li>Dr Ravi Kumar Saidala , Alliance University, Karnataka, India</li>
+<li>Dr K Murali Gopal, GIET University,Odisha,India</li>
+<li>Dr V Neelima, JNTUH, Telangana, India</li>
+<li>Dr T Subba Reddy, B V Raju Institute of Technology, Telangana,India</li>
+<li>Dr Raghavender K V , JNTUH , Telangana,India</li>
+<li>Dr. M. vamsikrishna, Aditya Engineering College,Andhra Pradesh ,India</li>
+<li>Dr.J. Suman, BVRIT, Narsapur, Medak, Telangana,India</li>
+<li>Dr Vikram Neerugatti, Jain University, Banglore, Karnataka,India</li>
+<li>Dr. S Rakesh, Chaitanya Bharathi Institute of Technology ,Telangana, India</li>
+<li>Hyma Birudaraju , , GNITS, Telangana, India</li>
+<li>Dr Pavan Kumar V, B V Raju Institute of Technology, Telangana, India </li>
+<li>P M Jyosthna, B V Raju Institute of Technology, Narsapur, Telangana, India</li>
+<li>Dr Swathi Mummadi, B V Raju Institute of Technology,Telangana,India</li>
+<li>Dr DBK Kamesh, Malla Reddy Engineering College for women ,Telangana,India</li>
+<li>Dr Shivaji Pawar , , AIKTC Technical Campus, Navi Mumbai , Maharashtra,India </li>
+<li>Rajeshwari Dharavath, Sri Indu institute of engineering and technology Telangana,India</li>
+<li>Dr Geetha, Jain university, Karnataka, India</li>
+<li>Dr. T. Nadana Ravishankar, SRM Institute of Science and Technology, Tamil Nadu India</li>
+<li>Raja koti B, Gitam University, Andhra Pradesh, India</li>
+<li>Dr. Debashreet Das , VIT,  Tamil Nadu, India</li>
+<li>Pradipta kumar Mishra, Srisriuniversity cuttack , Odisha ,India </li>
+<li>Dr. Kathirvel A, panimalar engineering college, Chennai, Tamilnadu,India</li>
+<li>Naveenkumar Jayakumar , VIT,  Vellore ,Tamilnadu, India</li>
+<li>Dr. Gnanaprakasam Thangavel, Jain College, Bangalore, Karnataka, India.</li>
+<li>Dr.M.Inbavalli, Marudhar Kesari Jain College for Women, Tamilnadu, India</li>
+<li>Dr. Revathi V, Dayananda Sagar University , Karnataka , India</li>
+<li>Dr. D. Sumathi, Alliance University, Karnataka ,India</li>
+<li>Dr.G.Nalinipriya, , Anna University, Tamilnadu, India</li>
+<li>Dr. Vinutha  N,  Dayananda Sagar University, Karnataka ,India</li>
+<li>Dr Senbagavalli M , Alliance University ,Karnataka, India</li>
+<li>Dr Senbagavalli M,  Alliance University, Karnataka, India</li>
+<li>Dr Nitalaksheswara Rao Kolukula, GITAM University,  Andhra Pradesh,India</li>
+<li>Subhash Chandra Yadav, Professor, Central University of Jharkhand, Jharkhand, India</li>
+<li>Dr.K.Ravikanth, Aurora Deemed To Be University, Telangana, India</li>
+<li>Dr. K. Chandrashekar, Aurora University, Telangana, India</li>
+<li>Dr. Meenakshi,  SRM Institute of science and Technology , Tamil Nadu, India</li>
+<li>Dr K G Maheswari,  Anna university, Tamilnadu,India </li>
+<li>Ch  Rajyalakshmi, JNTUH,Telangana,India</li>
+<li>Dr. Shobana Padmanabhan,  RV University,Karnataka, India</li>
+<li>Dr.L.Malathi ,Government Polytechnic College, Directorate of Technical Education Tamilnadu ,India</li>
+<li>Dr.R.Rajagopal,Alliance University,Karnataka,India</li>
+<li>Ananthoju Vijay Kumar,  Jain University ,Karnataka, India</li>
+<li>Dr Harvinder Singh, Amity University, Punjab , India</li>
+<li>Dr R C Karpagalakshmi , Alliance University,Karnataka, India</li>
+<li>A.Lakshmanarao, Adiyya Enginnering College, ,Surampalem,Kakinada, A.P, India</li>
+<li>Radhika Rajoju, KITS,Telangana, India</li>
+<li>Rama Krishna Thelagathoti, University of Nebraska Omaha, Nebrasks, USA</li>
+<li>Dr.Tamilselvan S, Saveetha school of Engineering, Chennai, TamilNadu,India</li>
+<li>Phani krishna Penumarthi, Engineer ,Paloaltonetworks, CA,United States</li>
+<li>Dr. M. Madhusudhana Subramanyam, King Khalid University , Abha, Saudi Arabia</li>
+<li>Krishna Kumar Jha, Swami Vivekananda Institute of Science and Technology, West Bengal, India</li>
+<li>Dr. Bhaveshkumar Pasi, Vishwaniketan's iMEET, Maharashtra, India</li>
+<li>Thota Sivasankar, NIIT University, Rajasthan, India</li>
+<li>Dr Ganapathi Raju, GRIET, Telangana, India</li>
+<li>Kolichala Rajashekar, IIT Bhilai, Chhattisgarh, India.</li>
+<li>Dr. S Padmaja ,KMIT, Telangana, India</li>
+<li>Dr. Gaurav Kumar Nigam, Jaypee Institute of Information Technology, Noida, UP, India</li>
+
+
+
+</ul>        </div>
+</div>
+</section>
+
+<section id="website-management-committee" class="content-section">
+  <div class="row">
+    <!-- Website Management Committee Section -->
+    <div class="col ml-5 mr-5 mt-5 pb-2" style="border-bottom: 2px solid #000;">
+        <h3>WEBSITE MANAGEMENT COMMITTEE</h3>
+        <ul>
+            <li style="font-size:18px">Dr. P. Radhika, VNR VJIET, Hyderabad, India.</li>
+        </ul>
+    </div>
+</div>
+</section>
+
+<section id="sponsorship-committee" class="content-section">
+  <div class="row">
+        
+    <div class="col ml-5 mr-5 mt-5">
+        <h3 class="border-bottom">SPONSORSHIP  COMMITTEE</h3>
+<ul>
+<li>	Dr. B.V. Kiranmayee, Department of CSE VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. M. Ravi Kanth, VNR VJIET, Hyderabad, India.	</li>
+<li>	Dr. P. Bharath Kumar Chowdary, Department of CSE VNR VJIET, Hyderabad, India .	</li>
+<li>	Mr. P. Ramakrishna Chowdary, Department of CSE VNR VJIET, Hyderabad, India.	</li>
+<li>	Mr. M. Rambabu, Department of CSE VNR VJIET, Hyderabad, India.	</li>
+<li>	Mrs. V. Vijaya Lakshmi, VNR VJIET, Hyderabad, India.	</li>
+</ul>        </div>
+</div>
+</section>
+
+<section id="workshop-committee" class="content-section">
+  <div class="row">
+        
+    <div class="col ml-5 mr-5 mt-5">
+        <h3>WORKSHOP  COMMITTEE</h3>
+<ul>
+
+
+<li>Mr. A.Akhil, Department of CSE VNR VJIET, Hyderabad, India.</li>
+
+</ul>        </div>
+</div>
+</section>
+
+<section id="finance-and-logistics-committee" class="content-section">
+  <h2>Technical and Managing Committee</h2>
+  <ul>
+    <li>Dr. V. Baby, VNR VJIET, Hyderabad, India.</li>
+    <li>Dr. G. S. Ramesh, VNR VJIET, Hyderabad, India.</li>
+    <li>Mrs. A. Madhavi, VNR VJIET, Hyderabad, India.</li>
+    <li>Mrs. P. Radhika, VNR VJIET, Hyderabad, India.</li>
+    <li>Dr. P. Tejaswi, VNR VJIET, Hyderabad, India.</li>
+    <li>Mrs. Somavarapu Jahnavi, VNR VJIET, Hyderabad, India.</li>
+    <li>Mrs. N. Sarika, VNR VJIET, Hyderabad, India.</li>
+    <li>Mr. Ch. Sri Sumanth, VNR VJIET, Hyderabad, India.</li>
+    <li>Mr. Ch. Suresh Kumar Raju, VNR VJIET, Hyderabad, India.</li>
+    <li>Mr. M. Rambabu, VNR VJIET, Hyderabad, India.</li>
+    <li>Mr. P. Ramesh, VNR VJIET, Hyderabad, India.</li>
+  </ul>
+</section>
+
+<section id="international-publicity" class="content-section">
+  <h2>International Publicity and Communications Committee</h2>
+  <ul>
+    <li>Mrs. P. Jyothi, VNR VJIET, Hyderabad, India.</li>
+    <li>Mrs. N. Lakshmi Kalyani, VNR VJIET, Hyderabad, India.</li>
+    <li>Mr. Shaik Abdul Hameed, VNR VJIET, Hyderabad, India.</li>
+    <li>Mr. J. Vamsinath, VNR VJIET, Hyderabad, India.</li>
+    <li>Mrs. G. Gouthami, VNR VJIET, Hyderabad, India.</li>
+    <li>Mr. I. Ravindra Kumar, VNR VJIET, Hyderabad, India.</li>
+    <li>Mr. M. Srikanth, VNR VJIET, Hyderabad, India.</li>
+    <li>Mrs. P. Prasanna, VNR VJIET, Hyderabad, India.</li>
+    <li>Mr. N. Nagaraju, VNR VJIET, Hyderabad, India.</li>
+  </ul>
+</section>
+
+
+<section id="national-publicity" class="content-section">
+  <h2>National Publicity and Communications Committee</h2>
+  <ul>
+    <li>Mr. T. Gnana Prakash, VNR VJIET, Hyderabad, India.</li>
+    <li>Dr. P. Anjusha, VNR VJIET, Hyderabad, India.</li>
+    <li>Dr. K. Bheemalingappa, VNR VJIET, Hyderabad, India.</li>
+    <li>Mrs. Nyemeesha S, VNR VJIET, Hyderabad, India.</li>
+    <li>Mr. P. Sudheer Benarji, VNR VJIET, Hyderabad, India.</li>
+    <li>Mrs. S. Sudeshna, VNR VJIET, Hyderabad, India.</li>
+    <li>Mr. K. Akhil, VNR VJIET, Hyderabad, India.</li>
+    <li>Ms. S. Alankritha, VNR VJIET, Hyderabad, India.</li>
+    <li>Ms. B. Prathusha, VNR VJIET, Hyderabad, India.</li>
+    <li>Mr. V. Vijay Bhaskara Reddy, VNR VJIET, Hyderabad, India.</li>
+    <li>Mr. Ch. Suresh Kumar Raju, VNR VJIET, Hyderabad, India.</li>
+    <li>Mrs. B. Usha Rani, VNR VJIET, Hyderabad, India.</li>
+  </ul>
+</section>
+
+
+<section id="national-publicity" class="content-section">
+  <h2>National Publicity and Communications Committee</h2>
+  <p>Content here...</p>
+</section>
+
+<section id="technical-and-managing-committee" class="content-section">
+  <div class="row">
+        
+    <div class="col ml-5 mr-5 mt-5">
+        <h3>TECHNICAL AND MANAGING COMMITTEE</h3>
+
+<ul>
+<li>Dr. V. Baby, VNR VJIET, Hyderabad, India.</li>
+<li>Dr. G. S. Ramesh, VNR VJIET, Hyderabad, India.</li>
+<li>Mrs. A Madhavi, VNR VJIET, Hyderabad, India.</li>
+<li>Mrs. P Radhika, VNR VJIET, Hyderabad, India.</li>
+<li>Dr. P. Tejaswi, VNR VJIET, Hyderabad, India.</li>
+<li>Mrs. Somavarapu Jahnavi, VNR VJIET, Hyderabad, India.</li>
+<li>Mrs. N. Sarika, VNR VJIET, Hyderabad, India.</li>
+<li>Mr. Ch. Sri Sumanth, VNR VJIET, Hyderabad, India.</li>
+<li>Mr. Ch. Suresh Kumar Raju , VNR VJIET, Hyderabad, India.</li>
+<li>Mr. M. Rambabu, VNR VJIET, Hyderabad, India.</li>
+<li>Mr. P. Ramesh, VNR VJIET, Hyderabad, India.</li>
+
+
+</ul>        </div>
+</div>
+</section>
+
+<section id="stage-decoration" class="content-section">
+  <h2>Stage Decoration and Hospitality</h2>
+  <ul>
+    <li>Dr. R. Vijaya Saraswathi, VNR VJIET, Hyderabad, India.</li>
+    <li>Dr. R. Vasavi, VNR VJIET, Hyderabad, India.</li>
+    <li>Mrs. L. Indira, VNR VJIET, Hyderabad, India.</li>
+    <li>Mr. N. Thirupathi, VNR VJIET, Hyderabad, India.</li>
+    <li>Mr. K. Sreedhar, VNR VJIET, Hyderabad, India.</li>
+  </ul>
+</section>
+
+<section id="certificates" class="content-section">
+  <h2>Certificates, Posters & Invitations</h2>
+  <ul>
+    <li>Mr. N. Sandeep Chaitanya, VNR VJIET, Hyderabad, India.</li>
+    <li>Mrs. Kriti Ohri, VNR VJIET, Hyderabad, India.</li>
+    <li>Mrs. K. Sai Madhuri, VNR VJIET, Hyderabad, India.</li>
+    <li>Ms. B. Prathusha, VNR VJIET, Hyderabad, India.</li>
+    <li>Mrs. T. Deepa, VNR VJIET, Hyderabad, India.</li>
+    <li>Mr. P. Ramesh, VNR VJIET, Hyderabad, India.</li>
+  </ul>
+</section>
+
+<section id="documentation-and-filing" class="content-section">
+  <h2>Documentation and Filing</h2>
+  <ul>
+    <li>Dr. P. V. Siva Kumar, VNR VJIET, Hyderabad, India.</li>
+    <li>Dr. D. N. Vasundhara, VNR VJIET, Hyderabad, India.</li>
+    <li>Mr. V. Vijay Bhaskar Reddy, VNR VJIET, Hyderabad, India.</li>
+    <li>Mrs. P. Lalitha Kumari, VNR VJIET, Hyderabad, India.</li>
+  </ul>
+</section>
+<section id="photography" class="content-section">
+    <h2>Photography and Media Management</h2>
+    <ul>
+      <li>Dr. C. Kiran, VNR VJIET, Hyderabad, India.</li>
+      <li>Mr. P. Sudheer Benarji, VNR VJIET, Hyderabad, India.</li>
+      <li>Mr. M. Venkata Krishna Rao, VNR VJIET, Hyderabad, India.</li>
+      <li>Mr. P. Rajesh, VNR VJIET, Hyderabad, India.</li>
+    </ul>
+</section>
+
+
+<section id="keynote" class="content-section">
+ <div class="table-wrapper-sg">
+    <table class="committee-table-sg">
+      <thead>
+        <tr>
+          <th class="table-header-sg">Photo</th>
+          <th class="table-header-sg">Name</th>
+          <th class="table-header-sg">Company</th>
+          <th class="table-header-sg">Designation</th>
+          <th class="table-header-sg">Email ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="./assets/speaker_1.jpg" width="200px" alt="Dr. Saptarshi Sengupta" class="profile-img-sg"></td>
+          <td>Dr. Saptarshi Sengupta</td>
+          <td>San José State University, San José, CA 95192-0249, USA</td>
+          <td>Assistant Professor, Department of Computer Science, Director, Machine Intelligence and Complex Systems (MICoSys) Lab</td>
+          <td><a href="mailto:saptarshi.sengupta@sjsu.edu">saptarshi.sengupta@sjsu.edu</a></td>
+        </tr>
+        <tr>
+          <td><img src="./assets/speaker_2.jpg"  width="200px"alt="Dr. Vadlamani Ravi" class="profile-img-sg"></td>
+          <td>Dr. Vadlamani Ravi</td>
+          <td>Institute for Development and Research in Banking Technology, Hyderabad</td>
+          <td>Professor</td>
+          <td><a href="mailto:vadlamaniravi3@gmail.com">vadlamaniravi3@gmail.com</a></td>
+        </tr>
+        <tr>
+<td>Yet to be added</td>
+          <td>Mr. Fayazoddin Mohamad</td>
+          <td>RITE DRUGS LLC (DBA - K&G Pharmacy)</td>
+          <td>Senior Regulatory & Compliance Analyst</td>
+          <td><a href="mailto:fayazmrx@gmail.com">fayazmrx@gmail.com</a></td>
+        </tr>
+        <tr>
+         
+           <td>Yet to be added</td>
+          <td>Mr. AVINASH KHANDERI</td>
+          <td>Walmart Inc, USA</td>
+          <td>Senior Data Engineer</td>
+          <td><a href="mailto:khanderiavinash05@gmail.com">khanderiavinash05@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td><img src="./assets/speaker_5.jpg" width="200px" alt="Mr. Kiran Kumar Kakkireni" class="profile-img-sg"></td>
+          <td>Mr. Kiran Kumar Kakkireni</td>
+          <td>Equinox IT Solutions LLC, USA</td>
+          <td>Chief Technology Officer</td>
+          <td><a href="mailto:kumar.kakkireni@gmail.com">kumar.kakkireni@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td><img src="./assets/speaker_6.jpg" width="200px" alt="Mr. Upender Reddy Chityala" class="profile-img-sg"></td>
+          <td>Mr. Upender Reddy Chityala</td>
+          <td>Equinox IT Solutions LLC, USA</td>
+          <td>Senior Software Developer</td>
+          <td><a href="mailto:chupenderreddy@gmail.com">chupenderreddy@gmail.com</a></td>
+        </tr>
+        <tr>
+  <td>Yet to be added</td>
+  <td>Mr. Pranay Teja Thadakamalla</td>
+  <td>USA</td>
+  <td>Lead Software Engineer</td>
+  <td><a href="mailto:tejpranay5@gmail.com">tejpranay5@gmail.com</a></td>
+</tr>
+
+<tr>
+  <td>Yet to be added</td>
+  <td>Mr. Karthik Jakranpally</td>
+  <td>Valiant IT Services Inc</td>
+  <td>Chief Operating Officer</td>
+  <td><a href="mailto:karthikreddyjk@gmail.com">karthikreddyjk@gmail.com</a></td>
+</tr>
+
+<tr>
+  <td>Yet to be added</td>
+  <td>Mr. Purnachandra Rao Koppula</td>
+  <td>Charter Communications</td>
+  <td>Senior Manager</td>
+  <td><a href="mailto:Purna.kvr@gmail.com">Purna.kvr@gmail.com</a></td>
+</tr>
+
+<tr>
+  <td>Yet to be added</td>
+  <td>Mr. Pradeep yasam </td>
+  <td>Equinox IT Solutions</td>
+  <td>Big Data Automation Engineer</td>
+  <td><a href="mailto:yasampradeep5@gmail.com">yasampradeep5@gmail.com</a></td>
+</tr>
+
+      </tbody>
+    </table>
+     </div>
+</section>
+
+
+
+<section id="contact-us" class="content-section">
+  <h2 class="border-bottom">Contact Us</h2>
+  <h5>Conference Secretariat</h5>
+  <p>
+    Department of Computer Science and Engineering,<br>
+    VNR Vignana Jyothi Institute of Engineering and Technology,<br>
+    Bachupally, Nizampet (S.O), Hyderabad, Telangana, India-500090.<br>
+    e-Mail: <a href="mailto:icacecs@gmail.com">icacecs@gmail.com</a><br>
+    
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Mail</th>
+      </tr>
+    </thead>
+    <tbody>
+       
+      <tr>
+        <td>Dr. A. Brahmananda Reddy</td>
+        <td>9010008785</td>
+        <td><a href="mailto:brahmanandareddy_a@vnrvjiet.in">brahmanandareddy_a@vnrvjiet.in</a></td>
+      </tr> 
+      <tr>
+        <td>Dr. N. V. Sailaja</td>
+        <td>9866022320</td>
+        <td><a href="mailto:sailaja_nv@vnrvjiet.in">sailaja_nv@vnrvjiet.in</a></td>
+      </tr>
+      <tr>
+        <td>Dr. R. Vijaya Sarawathi</td>
+        <td>9492433442</td>
+        <td><a href="mailto:vijayasaraswathi_r@vnrvjiet.in">vijayasaraswathi_r@vnrvjiet.in</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="container mt-5">
+    <h3 class="border-bottom text-center">Our College Location</h3>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-10">
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.344880720254!2d78.3828276751684!3d17.53875928337447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8e0ab28e0975%3A0x7b048b2858fdee94!2sVallurupalli%20Nageswara%20Rao%20Vignana%20Jyothi%20Institute%20of%20Engineering%20%26Technology!5e0!3m2!1sen!2sin!4v1731694537559!5m2!1sen!2sin" 
+            width="100%" 
+            
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="content-section">
+    <div class="year-gallery">
+      <!-- Year 2024 -->
+      <div class="gallery-year">
+        <h2 class="year-title mt-3 fw-bold">ICACECS 2024</h2>
+        <div class="gallery-grid">
+          <img src="./assets/24img.JPG" alt="2024 Image 1" class="gallery-item">
+          <img src="./assets/24img4.JPG" alt="2024 Image 2" class="gallery-item">
+          <img src="./assets/24img3.JPG" alt="2024 Image 3" class="gallery-item">
+          <img src="./assets/24img4.JPG" alt="2023 Image 1" class="gallery-item">
+          <img src="./assets/24img5.JPG" alt="2023 Image 1" class="gallery-item">
+          <img src="./assets/24img7.JPG" alt="2023 Image 1" class="gallery-item">
+          <img src="./assets/24img8.jpg" alt="2023 Image 1" class="gallery-item">
+        </div>
+      </div>
+      
+      <!-- Year 2023 -->
+      <div class="gallery-year">
+        <h2 class="year-title mt-3 fw-bold">ICACECS 2023</h2>
+        <div class="gallery-grid">
+          <img src="./assets/23img2.jpg" alt="2023 Image 1" class="gallery-item">
+          <img src="./assets/23img3.JPG" alt="2023 Image 1" class="gallery-item">
+          <img src="./assets/23img4.JPG" alt="2023 Image 1" class="gallery-item">
+          <img src="./assets/23img7.jpg" alt="2023 Image 1" class="gallery-item">
+          <img src="./assets/23img5.JPG" alt="2023 Image 1" class="gallery-item">
+          <img src="./assets/23img6.jpg" alt="2023 Image 1" class="gallery-item">
+         
+        </div>
+      </div>
+  
+      <!-- Year 2022 -->
+      <div class="gallery-year">
+        <h2 class="year-title mt-3 fw-bold">ICACECS 2022</h2>
+        <div class="gallery-grid">
+          <img src="./assets/22img.JPG" alt="2022 Image 1" class="gallery-item">
+        </div>
+      </div>
+  
+      <!-- Year 2021 -->
+      <div class="gallery-year">
+        <h2 class="year-title mt-3 fw-bold">ICACECS 2021</h2>
+        <div class="gallery-grid">
+          <img src="./assets/21img.jpg" alt="2021 Image 1" class="gallery-item">
+          <img src="./assets/21img2.jpg" alt="2021 Image 2" class="gallery-item">
+          <img src="./assets/21img3.jpg" alt="2021 Image 3" class="gallery-item">
+        </div>
+      </div>
+  
+      <!-- Year 2020 -->
+      <div class="gallery-year ">
+        <h2 class="year-title mt-3 fw-bold">ICACECS 2020</h2>
+        <div class="gallery-grid">
+          <img src="./assets/20img.JPG" alt="2020 Image 1" class="gallery-item">
+          <img src="./assets/20img2.JPG" alt="2020 Image 2" class="gallery-item">
+          <img src="./assets/20img3.JPG" alt="2020 Image 3" class="gallery-item">
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal -->
+    <div id="image-modal" class="modal">
+      <span id="modal-close" class="modal-close">&times;</span>
+      <img id="modal-image" class="modal-content" alt="Expanded View">
+     
+    </div>
+  
+    
+
+      
+ 
+  
+</section>
+    <section id="previous-conferences" class="content-section">
+      <h2>Previous Conferences</h2>
+      <p>Content here...</p>
+    </section>
+    <section id="icacecs2020" class="content-section">
+      <h2>ICACECS-2020</h2>
+      <h5>The proceedings of ICACECS-2020 are Published by Springer Nature.</h5>
+    
+      <h6>
+        <a href="https://link.springer.com/book/10.1007/978-981-15-9293-5" target="_blank">ICACECS 2020 - LAIS</a>
+      </h6>
+      <h6>
+        <a href="https://link.springer.com/book/10.1007/978-981-33-4046-6" target="_blank">ICACECS 2020 - AIS</a>
+      </h6>
+      
+      
+    </section>
+
+    <section id="icacecs2021" class="content-section">
+      <h2>ICACECS-2021</h2>
+      <h5>The proceedings of ICACECS-2021 are Published by Springer Nature.</h5>
+    
+      <h6>
+        <a href="https://link.springer.com/book/10.1007/978-981-16-7389-4" target="_blank">ICACECS 2021 - AIS</a>
+      </h6>
+      
+      
+    </section>
+    <section id="icacecs2022" class="content-section">
+     <h2>ICACECS-2022</h2>
+      <h5>The proceedings of ICACECS-2022 are Published by Springer Nature.</h5>
+    
+      <h6>
+        <a href="https://link.springer.com/book/10.1007/978-981-19-9228-5" target="_blank">ICACECS 2022 -LNNS</a>
+      </h6>
+
+    </section>
+    <section id="icacecs2023" class="content-section">
+      <h2>ICACECS-2023</h2>
+      <h5>The proceedings of ICACECS-2023 are Published by Springer Nature.</h5>
+      <h6>
+        <a href="https://www.atlantis-press.com/proceedings/icacecs-23" target="_blank">ICACECS 2023 -AHCS</a>
+      </h6>
+    </section>
+    <section id="icacecs2024" class="content-section">
+      <h2>ICACECS-2024</h2>
+      <h5>The proceedings of ICACECS-2024 are Published by Springer Nature.</h5>
+      <h6>
+        <a href="https://link.springer.com/book/9789819644094" target="_blank">ICACECS 2024</a>
+      </h6>
+      
+    </section>
+  </main>
+
+ 
+<style>
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Adds space between rows */
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  td a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+
+  td a:hover {
+    text-decoration: underline;
+  }
+</style>
+  <!-- Footer -->
+ <!-- Footer -->
+<footer class="footer text-center mt-5 text-md-left">
+  <div class="container">
+    <div class="row">
+
+      <!-- ICACECS Info -->
+      <div class="col-md-3">
+        <h6 class="text-uppercase">ICACECS</h6>
+        <p>International Conference on Advances in Computer Engineering and Communication Systems</p>
+      </div>
+
+      <!-- Useful Links 1 -->
+      <div class="col-md-2">
+        <h6 class="text-uppercase">Useful Links</h6>
+        <p><a href="#" onclick="showSection('call-for-paper')">CALL FOR PAPER</a></p>
+        <p><a href="#" onclick="showSection('programme-schedule')">PROGRAMME SCHEDULE</a></p>
+        <p><a href="#" onclick="showSection('registration')">REGISTRATION</a></p>
+      </div>
+    
+
+      <!-- Useful Links 2 -->
+      <div class="col-md-2">
+        <h6 class="text-uppercase">Useful Links</h6>
+        <p><a href="">SUBMIT PAPER</a></p>
+        <p><a href="https://vnrvjiet.ac.in/cse.php/">WANT TO KNOW MORE</a></p>
+        <p><a href="">FEEDBACK</a></p>
+        <p><a href="#" onclick="showSection('contact-us')">Help</a></p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4">
+        <h6 class="text-uppercase">Contact</h6>
+        <p>Bachupally, Nizampet (S.O), Hyderabad, Telangana, India-500090.</p>
+        <p>Email: <a href="mailto:icacecs@gmail.com">icacecs@gmail.com</a></p>
+       
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="row">
+      <div class="col-12">
+        <hr class="bg-light">
+        <p class="copyright">© 2025 Copyright: 
+          <a href="">ICACECS | ALL RIGHTS RESERVED</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+<script>
+  const url = "https://icacecs.org/ICACECS-2025-Schedule.pdf";
+
+  let pdfDoc = null,
+      pageNum = 1,
+      pageRendering = false,
+      pageNumPending = null,
+      scale = 1.5,
+      canvas = document.getElementById("pdf-canvas"),
+      ctx = canvas.getContext("2d");
+
+  pdfjsLib.getDocument(url).promise.then(function (pdfDoc_) {
+    pdfDoc = pdfDoc_;
+    document.getElementById("page-count").textContent = pdfDoc.numPages;
+    renderPage(pageNum);
+  });
+
+  function renderPage(num) {
+    pageRendering = true;
+    pdfDoc.getPage(num).then(function (page) {
+      const viewport = page.getViewport({ scale: scale });
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+
+      const renderContext = {
+        canvasContext: ctx,
+        viewport: viewport,
+      };
+      const renderTask = page.render(renderContext);
+
+      renderTask.promise.then(function () {
+        pageRendering = false;
+        document.getElementById("page-num").textContent = num;
+
+        if (pageNumPending !== null) {
+          renderPage(pageNumPending);
+          pageNumPending = null;
+        }
+      });
+    });
+  }
+
+  function queueRenderPage(num) {
+    if (pageRendering) {
+      pageNumPending = num;
+    } else {
+      renderPage(num);
+    }
+  }
+
+  function nextPage() {
+    if (pageNum >= pdfDoc.numPages) return;
+    pageNum++;
+    queueRenderPage(pageNum);
+  }
+
+  function prevPage() {
+    if (pageNum <= 1) return;
+    pageNum--;
+    queueRenderPage(pageNum);
+  }
+</script>
+
+  <!-- Swiper and Script Initialization -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js" ></script>
+  <script>
+    // Initialize Swiper with autoplay
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    // Function to show the corresponding section when a link is clicked
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.content-section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      const sectionToShow = document.getElementById(sectionId);
+      if (sectionToShow) {
+        sectionToShow.classList.add('active');
+      }
+    }
+    // Show the 'home' section by default when the page loads
+    document.addEventListener("DOMContentLoaded", function() {
+      showSection('home');
+    });
+
+     const link1 = document.getElementById('submissionLink');
+    const msg1 = document.getElementById('msg');
+    link1.addEventListener('click', function(event) {
+      event.preventDefault();
+      msg1.style.display = 'block';
+    });
+
+    // Second link
+    const link2 = document.getElementById('submissionLink-2');
+    const msg2 = document.getElementById('msg-2');
+    link2.addEventListener('click', function(event) {
+      event.preventDefault();
+      msg2.style.display = 'block';
+    });
+
+  </script>
+
+</html>
