@@ -4,16 +4,145 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* General styling for the header with reduced height */
-.header {
-  position: relative;
-  overflow: hidden; /* Ensure no content overflows */
-  display: flex;    /* Center content horizontally and vertically */
-  justify-content: center;
+/* Conference Header Styling */
+.conference-header {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-bottom: 3px solid #0056b3;
+  padding: 20px 30px;
+  margin-bottom: 15px;
+}
+
+.header-content {
+  display: flex;
   align-items: center;
-  max-width: 1000px; /* Restrict the header's maximum width */
-  /* Reduce the header's height */
-  margin: auto;      /* Center the header horizontally */
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logo-section-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.vnr-logo {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+.icacecs-logo {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+.title-section {
+  flex: 1;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.conference-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0056b3;
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin: 0 0 8px 0;
+  letter-spacing: 0.3px;
+}
+
+.conference-year {
+  font-size: 32px;
+  font-weight: 700;
+  color: #003366;
+  margin: 8px 0 5px 0;
+  letter-spacing: 3px;
+}
+
+.conference-date {
+  font-size: 14px;
+  font-weight: 500;
+  color: #495057;
+  margin: 5px 0 10px 0;
+}
+
+.organized-by {
+  font-size: 11px;
+  font-weight: 500;
+  color: #6c757d;
+  margin: 10px 0 4px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.department {
+  font-size: 12px;
+  font-weight: 600;
+  color: #0056b3;
+  margin: 4px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.institute {
+  font-size: 11px;
+  font-weight: 600;
+  color: #dc3545;
+  margin: 4px 0 0 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.logo-section-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  width: 120px;
+}
+
+.springer-logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.csi-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .logo-section-left,
+  .logo-section-right {
+    justify-content: center;
+    width: auto;
+  }
+  
+  .title-section {
+    padding: 10px 0;
+  }
+  
+  .conference-title {
+    font-size: 13px;
+  }
+  
+  .conference-year {
+    font-size: 24px;
+  }
 }
 
 
