@@ -4,144 +4,165 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* Conference Header Styling */
-.conference-header {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  border-bottom: 3px solid #0056b3;
-  padding: 20px 30px;
-  margin-bottom: 15px;
+
+/* =========================================
+   New Professional Header Design
+   ========================================= */
+
+/* Top Bar - Dark & Sleek */
+.top-bar {
+  background-color: #002b5e;
+  /* Deep Royal Blue */
+  color: #ffffff;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header-content {
+/* Main Header Container */
+.main-header {
+  background: #ffffff;
+  border-bottom: 4px solid #d32f2f;
+  /* Accent Color */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 15px 0;
+}
+
+.header-body {
+  max-width: 100%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
-  max-width: 1400px;
-  margin: 0 auto;
+  padding: 0 50px;
+  gap: 20px;
 }
 
-.logo-section-left {
+/* Logo Sections */
+.logo-group {
+  flex: 1;
   display: flex;
   align-items: center;
-  gap: 15px;
-  flex-shrink: 0;
-  width: 200px;
+  gap: 25px;
 }
 
-.vnr-logo {
-  height: 70px;
+.logo-group:first-child {
+  justify-content: flex-start;
+}
+
+.logo-group:last-child {
+  justify-content: flex-end;
+}
+
+.logo-group img {
+  height: 65px;
+  /* Standardized height */
   width: auto;
   object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
-.icacecs-logo {
-  height: 45px;
-  width: auto;
-  object-fit: contain;
+.logo-group img:hover {
+  transform: scale(1.05);
 }
 
-.title-section {
-  flex: 1;
+/* Center Content */
+.header-center {
+  flex: 0 0 auto;
   text-align: center;
   padding: 0 20px;
 }
 
-.conference-title {
-  font-size: 15px;
-  font-weight: 600;
-  color: #0056b3;
-  text-transform: uppercase;
-  line-height: 1.4;
-  margin: 0 0 8px 0;
-  letter-spacing: 0.3px;
+.hero-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #002b5e;
+  margin: 0;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
-.conference-year {
-  font-size: 32px;
+.date-badge {
+  display: inline-block;
+  background-color: #f8f9fa;
+  color: #d32f2f;
+  font-size: 16px;
   font-weight: 700;
-  color: #003366;
-  margin: 8px 0 5px 0;
-  letter-spacing: 3px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin: 10px 0;
+  border: 1px solid #e9ecef;
 }
 
-.conference-date {
-  font-size: 14px;
-  font-weight: 500;
-  color: #495057;
-  margin: 5px 0 10px 0;
-}
-
-.organized-by {
-  font-size: 11px;
-  font-weight: 500;
-  color: #6c757d;
-  margin: 10px 0 4px 0;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.department {
-  font-size: 12px;
-  font-weight: 600;
-  color: #0056b3;
-  margin: 4px 0;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-}
-
-.institute {
-  font-size: 11px;
-  font-weight: 600;
-  color: #dc3545;
-  margin: 4px 0 0 0;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-}
-
-.logo-section-right {
+.organizer-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  flex-shrink: 0;
-  width: 120px;
+  gap: 4px;
 }
 
-.springer-logo {
-  height: 32px;
-  width: auto;
-  object-fit: contain;
+.org-label {
+  font-size: 11px;
+  color: #6c757d;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.csi-logo {
-  height: 40px;
-  width: auto;
-  object-fit: contain;
+.dept-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #002b5e;
+  margin: 0;
 }
 
+.inst-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #495057;
+  margin: 0;
+}
+
+/* Responsive Design */
 @media (max-width: 992px) {
-  .header-content {
+  .header-body {
     flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .logo-group {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .top-bar {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-group img {
+    height: 50px;
     gap: 15px;
   }
-  
-  .logo-section-left,
-  .logo-section-right {
-    justify-content: center;
-    width: auto;
+
+  .hero-title {
+    font-size: 28px;
   }
-  
-  .title-section {
-    padding: 10px 0;
-  }
-  
-  .conference-title {
-    font-size: 13px;
-  }
-  
-  .conference-year {
-    font-size: 24px;
+
+  .dept-name,
+  .inst-name {
+    font-size: 11px;
   }
 }
 
@@ -156,7 +177,8 @@
   border-collapse: collapse;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  min-width: 600px; /* Prevents table squashing on small screens */
+  min-width: 600px;
+  /* Prevents table squashing on small screens */
 }
 
 .committee-table-sg th,
@@ -201,6 +223,7 @@
 
 /* Optional enhancement: stacked table on very small screens */
 @media (max-width: 500px) {
+
   .committee-table-sg,
   .committee-table-sg thead,
   .committee-table-sg tbody,
@@ -244,13 +267,15 @@
   position: relative;
   z-index: 5;
   overflow: hidden;
- height: 450px; /* Reduced height for the entire carousel */
+  height: 450px;
+  /* Reduced height for the entire carousel */
 }
 
 /* Swiper Container */
 .swiper-container {
   width: 100%;
-  height: 100%; /* Fill the container height */
+  height: 100%;
+  /* Fill the container height */
   max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
@@ -266,8 +291,10 @@
 /* Swiper Slide */
 .swiper-slide {
   flex-shrink: 0;
-  width: 100%; /* Full container width */
-  height: 100%; /* Fill the height of the container */
+  width: 100%;
+  /* Full container width */
+  height: 100%;
+  /* Fill the height of the container */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,9 +302,12 @@
 
 /* Centered and Responsive Images */
 .swiper-slide img {
-  width: 100%; /* Make image take full width */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure images cover the space */
+  width: 100%;
+  /* Make image take full width */
+  height: auto;
+  /* Maintain aspect ratio */
+  object-fit: cover;
+  /* Ensure images cover the space */
   display: block;
   border-radius: 5px;
 }
@@ -314,15 +344,18 @@
   background-color: rgba(255, 255, 255, 0.7);
   color: #000;
 }
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
 
-  .carousel{
+  .carousel {
     max-height: 300px;
   }
+
   .swiper-container {
     max-width: 90%;
-    height: 300px; /* Adjust height for medium screens */
+    height: 300px;
+    /* Adjust height for medium screens */
   }
 
   .swiper-button-next,
@@ -335,11 +368,13 @@
 @media (max-width: 576px) {
   .swiper-container {
     max-width: 100%;
-    height: 250px; /* Further reduced height for small screens */
+    height: 250px;
+    /* Further reduced height for small screens */
   }
 
   .swiper-slide img {
-    object-fit: contain; /* Prevent cropping on small screens */
+    object-fit: contain;
+    /* Prevent cropping on small screens */
   }
 
   .swiper-button-next,
@@ -351,7 +386,8 @@
 
 @media (max-width: 360px) {
   .swiper-container {
-    height: 200px; /* Adjust height for very small screens */
+    height: 200px;
+    /* Adjust height for very small screens */
   }
 
   .swiper-button-next,
@@ -361,20 +397,25 @@
   }
 }
 
-.navbar{
-  padding-left: 30px; /* Space on the left */
+.navbar {
+  padding-left: 30px;
+  /* Space on the left */
   padding-right: 30px;
-  color:white;
-  
+  color: white;
+
 }
+
 .navbar .nav-link {
-  font-size: 17px; /* Adjust the font size as needed */
-  color: rgb(240, 240, 240) !important; 
-  /* Space on the right *//* Ensure the text color is white */
+  font-size: 17px;
+  /* Adjust the font size as needed */
+  color: rgb(240, 240, 240) !important;
+  /* Space on the right */
+  /* Ensure the text color is white */
 }
 
 .navbar .dropdown-menu .dropdown-item {
-  font-size: 16px; /* Adjust the font size for dropdown items */
+  font-size: 16px;
+  /* Adjust the font size for dropdown items */
 }
 
 
@@ -382,50 +423,66 @@
 .nav-link.active {
   color: white;
   /* Set the text color to white */
-   /* Optional: Highlight with a background color */
+  /* Optional: Highlight with a background color */
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
-  display: block; /* Show dropdown on hover */
-  margin-top: 0;  /* Adjust dropdown position if necessary */
+  display: block;
+  /* Show dropdown on hover */
+  margin-top: 0;
+  /* Adjust dropdown position if necessary */
 }
 
 /* Ensure the image scales properly within the reduced header */
 .header img {
-  width: 100%;       /* Scale the image to fit the width of the header */
-  height: auto;      /* Maintain the image's aspect ratio */
-  object-fit: cover; /* Crop excess parts of the image to fit the container */
+  width: 100%;
+  /* Scale the image to fit the width of the header */
+  height: auto;
+  /* Maintain the image's aspect ratio */
+  object-fit: cover;
+  /* Crop excess parts of the image to fit the container */
 }
 
 /* Message Style */
 #message {
   display: inline-block;
   margin-left: 30px;
-  font-size: 18px;  /* Reduced font size */
+  font-size: 18px;
+  /* Reduced font size */
   font-weight: bold;
   opacity: 0;
   transform: scale(0);
-  animation: zoomInHighlight 3s ease-in-out infinite; /* Increased duration to 3 seconds */
-  padding: 10px 20px;  /* Added padding for the message itself */
-  background-color: #fff; /* Optional: Background for message */
-  border-radius: 8px; /* Optional: Rounded corners for message */
+  animation: zoomInHighlight 3s ease-in-out infinite;
+  /* Increased duration to 3 seconds */
+  padding: 10px 20px;
+  /* Added padding for the message itself */
+  background-color: #fff;
+  /* Optional: Background for message */
+  border-radius: 8px;
+  /* Optional: Rounded corners for message */
 }
 
 /* Animation for zooming and highlighting */
 @keyframes zoomInHighlight {
   0% {
     opacity: 0;
-    transform: scale(0); /* Start small */
+    transform: scale(0);
+    /* Start small */
     box-shadow: none;
   }
+
   50% {
     opacity: 1;
-    transform: scale(1.1); /* Zoom in */
-    box-shadow: 0 0 8px 3px rgba(61, 58, 156, 0.7); /* Smaller highlight box with red color */
+    transform: scale(1.1);
+    /* Zoom in */
+    box-shadow: 0 0 8px 3px rgba(61, 58, 156, 0.7);
+    /* Smaller highlight box with red color */
   }
+
   100% {
     opacity: 1;
-    transform: scale(1); /* Return to original size */
+    transform: scale(1);
+    /* Return to original size */
     box-shadow: none;
   }
 }
@@ -464,7 +521,8 @@
 
 .scrolling-content {
   display: inline-block;
-  padding-left: 100%; /* Start the text off-screen to the right */
+  padding-left: 100%;
+  /* Start the text off-screen to the right */
   animation: scroll-left 25s linear infinite;
   font-size: 1em;
   color: #ffffff;
@@ -474,6 +532,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -484,26 +543,32 @@
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
+
 .call-for-papers-description {
   text-align: justify;
   margin-bottom: 20px;
 }
+
 .visitor-heading {
   color: #006400;
 }
+
 .visitor-counter-container {
   font-size: 14px;
   color: #006400;
   margin-top: 20px;
 }
-.author-guidelines-title{
+
+.author-guidelines-title {
   color: #007bff;
   margin-bottom: 20px;
 }
+
 .submission-title,
 .template-links-title,
 .conference-tracks-title {
@@ -538,6 +603,7 @@
   max-width: 900px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .book-item {
   flex: 1 1 30%;
   margin: 10px;
@@ -546,7 +612,8 @@
   border-radius: 8px;
   padding: 10px;
   background-color: #f9f9f9;
-  min-height: 250px; /* Ensures all boxes have the same height */
+  min-height: 250px;
+  /* Ensures all boxes have the same height */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -569,13 +636,15 @@
 
 @media (max-width: 768px) {
   .book-item {
-    flex: 1 1 45%; /* Two items per row */
+    flex: 1 1 45%;
+    /* Two items per row */
   }
 }
 
 @media (max-width: 480px) {
   .book-item {
-    flex: 1 1 100%; /* One item per row on smaller screens */
+    flex: 1 1 100%;
+    /* One item per row on smaller screens */
   }
 }
 
@@ -584,13 +653,15 @@
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
-  border-bottom: 3px solid #000; /* Border under the title */
+  border-bottom: 3px solid #000;
+  /* Border under the title */
   padding-bottom: 10px;
 }
 
 .conference-tracks {
   width: 80%;
-  margin: 0 auto; /* Centering the content */
+  margin: 0 auto;
+  /* Centering the content */
 }
 
 .track {
@@ -602,21 +673,25 @@
   color: #333;
   margin-bottom: 15px;
   text-transform: capitalize;
-  border-bottom: 2px solid #000; /* Black border for each track title */
+  border-bottom: 2px solid #000;
+  /* Black border for each track title */
   padding-bottom: 5px;
   font-weight: bold;
 }
 
 .track ul {
-   /* Remove default bullets */
-  padding-left: 0; /* Remove left padding */
-  margin-left: 0; /* Remove left margin */
+  /* Remove default bullets */
+  padding-left: 0;
+  /* Remove left padding */
+  margin-left: 0;
+  /* Remove left margin */
 }
 
 .track ul li {
   font-size: 18px;
   color: #555;
-  margin-bottom: 8px; /* Space between list items */
+  margin-bottom: 8px;
+  /* Space between list items */
 }
 
 
@@ -638,7 +713,8 @@
 }
 
 .gallery-grid img {
-  width: calc(33.333% - 10px); /* Three images per row */
+  width: calc(33.333% - 10px);
+  /* Three images per row */
   aspect-ratio: 3 / 2;
   object-fit: cover;
   border-radius: 8px;
@@ -737,25 +813,35 @@
 }
 
 .programme-schedule-list {
-  list-style-type: none; /* Removes bullet points */
-  padding: 0; /* Removes default padding */
-  margin: 0; /* Removes default margin */
+  list-style-type: none;
+  /* Removes bullet points */
+  padding: 0;
+  /* Removes default padding */
+  margin: 0;
+  /* Removes default margin */
 }
 
 .programme-schedule-list li {
-  margin-bottom: 10px; /* Adds spacing between items */
+  margin-bottom: 10px;
+  /* Adds spacing between items */
 }
 
 .programme-schedule-list a {
-  text-decoration: none; /* Removes underline from links */
-  color: #007bff; /* Sets link color */
-  font-weight: bold; /* Makes the text bold */
+  text-decoration: none;
+  /* Removes underline from links */
+  color: #007bff;
+  /* Sets link color */
+  font-weight: bold;
+  /* Makes the text bold */
 }
 
 .programme-schedule-list a:hover {
-  text-decoration: underline; /* Adds underline on hover */
-  color: #0056b3; /* Darkens link color on hover */
+  text-decoration: underline;
+  /* Adds underline on hover */
+  color: #0056b3;
+  /* Darkens link color on hover */
 }
+
 .terms-title-container {
   width: 100%;
   border-bottom: 2px solid #787878;
@@ -765,11 +851,13 @@
 .terms-title {
   text-align: center;
 }
+
 .terms-title {
   text-align: center;
   margin-bottom: 20px;
   border-bottom: 2px solid #787878;
-  box-sizing: border-box; /* Include border in the width calculation */
+  box-sizing: border-box;
+  /* Include border in the width calculation */
 }
 
 .footer {
@@ -777,20 +865,25 @@
   color: #fff;
   padding: 20px 0;
 }
+
 .footer a {
   color: #0a84ff;
   text-decoration: none;
 }
+
 .footer a:hover {
   color: #fff;
   text-decoration: underline;
 }
+
 .footer h6 {
   font-weight: bold;
 }
+
 .footer p {
   margin: 0;
 }
+
 .footer .copyright {
   text-align: center;
   padding-top: 10px;
