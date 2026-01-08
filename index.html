@@ -1727,13 +1727,16 @@
     pageNumPending = null,
     scale = 1.5,
     canvas = document.getElementById("pdf-canvas"),
-    ctx = canvas.getContext("2d");
+    ctx = canvas ? canvas.getContext("2d") : null;
 
-  pdfjsLib.getDocument(url).promise.then(function (pdfDoc_) {
-    pdfDoc = pdfDoc_;
-    document.getElementById("page-count").textContent = pdfDoc.numPages;
-    renderPage(pageNum);
-  });
+  if (canvas && ctx) {
+    pdfjsLib.getDocument(url).promise.then(function (pdfDoc_) {
+      pdfDoc = pdfDoc_;
+      const pageCount = document.getElementById("page-count");
+      if (pageCount) pageCount.textContent = pdfDoc.numPages;
+      renderPage(pageNum);
+    });
+  }
 
   function renderPage(num) {
     pageRendering = true;
@@ -1823,19 +1826,22 @@
 
   const link1 = document.getElementById('submissionLink');
   const msg1 = document.getElementById('msg');
-  link1.addEventListener('click', function (event) {
-    event.preventDefault();
-    msg1.style.display = 'block';
-  });
+  if (link1 && msg1) {
+    link1.addEventListener('click', function (event) {
+      event.preventDefault();
+      msg1.style.display = 'block';
+    });
+  }
 
   // Second link
   const link2 = document.getElementById('submissionLink-2');
   const msg2 = document.getElementById('msg-2');
-  link2.addEventListener('click', function (event) {
-    event.preventDefault();
-    msg2.style.display = 'block';
-  });
-
+  if (link2 && msg2) {
+    link2.addEventListener('click', function (event) {
+      event.preventDefault();
+      msg2.style.display = 'block';
+    });
+  }
 </script>
 
 </html>
