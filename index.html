@@ -414,9 +414,11 @@
 
             <script type="text/javascript">
               var blink = document.getElementById('blink');
-              setInterval(function () {
-                blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
-              }, 1000); 
+              if (blink) {
+                setInterval(function () {
+                  blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+                }, 1000);
+              }
             </script>
 
             <div class="card shadow mb-5 bg-white rounded">
