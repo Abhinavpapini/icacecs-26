@@ -11,35 +11,35 @@
 
 /* Top Bar - Dark & Sleek */
 .top-bar {
-  background-color: #002b5e;
+  background-color: #002b5e !important;
   /* Deep Royal Blue */
-  color: #ffffff;
-  padding: 12px 20px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #ffffff !important;
+  padding: 12px 20px !important;
+  text-align: center !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
 }
 
 /* Main Header Container */
 .main-header {
-  background: #ffffff;
-  border-bottom: 4px solid #d32f2f;
+  background: #ffffff !important;
+  border-bottom: 4px solid #d32f2f !important;
   /* Accent Color */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  padding: 15px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+  padding: 15px 0 !important;
 }
 
 .header-body {
-  max-width: 100%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 50px;
-  gap: 20px;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 0 50px !important;
+  gap: 20px !important;
 }
 
 /* Logo Sections */
@@ -78,13 +78,13 @@
 }
 
 .hero-title {
-  font-size: 42px;
-  font-weight: 800;
-  color: #002b5e;
-  margin: 0;
-  letter-spacing: 2px;
-  line-height: 1.2;
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 42px !important;
+  font-weight: 800 !important;
+  color: #002b5e !important;
+  margin: 0 !important;
+  letter-spacing: 2px !important;
+  line-height: 1.2 !important;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
 }
 
 .date-badge {
