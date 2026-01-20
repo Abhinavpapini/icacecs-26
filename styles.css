@@ -15,44 +15,42 @@ body {
 
 /* Main Header Container */
 .main-header {
-  background: #ffffff !important;
-  border-bottom: 4px solid #d32f2f !important;
-  /* Accent Color */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
-  padding: 15px 0 !important;
+  background: #ffffff;
+  border-bottom: 4px solid #d32f2f;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 30px 0;
 }
 
 .header-body {
-  max-width: 100% !important;
-  margin: 0 auto !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  padding: 0 50px !important;
-  gap: 20px !important;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  align-items: center;
+  gap: 40px;
+  padding: 0 40px;
 }
 
 /* Logo Sections */
 .logo-group {
-  flex: 0 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 20px;
-  min-width: 180px;
 }
 
-.logo-group:first-child {
-  justify-content: flex-start;
+.logo-group.left {
+  align-items: flex-start;
 }
 
-.logo-group:last-child {
-  justify-content: flex-end;
+.logo-group.right {
+  align-items: flex-end;
 }
 
 .logo-group img {
-  height: 65px;
-  /* Standardized height */
+  height: 70px;
   width: auto;
+  max-width: 100%;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
@@ -63,109 +61,147 @@ body {
 
 /* Center Content */
 .header-center {
-  flex: 1 1 auto;
   text-align: center;
   padding: 0 20px;
-  max-width: 900px;
 }
 
 .conference-title {
-  font-size: 14px !important;
-  font-weight: 800 !important;
-  color: #002b5e !important;
-  margin: 0 0 10px 0 !important;
-  letter-spacing: 0.5px !important;
-  line-height: 1.5 !important;
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
-  text-transform: uppercase !important;
+  font-size: 15px;
+  font-weight: 700;
+  color: #002b5e;
+  margin: 0 0 15px 0;
+  letter-spacing: 0.8px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
-  font-size: 42px !important;
-  font-weight: 800 !important;
-  color: #002b5e !important;
-  margin: 0 !important;
-  letter-spacing: 2px !important;
-  line-height: 1.2 !important;
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+  font-size: 44px;
+  font-weight: 800;
+  color: #002b5e;
+  margin: 0 0 15px 0;
+  letter-spacing: 3px;
+  line-height: 1.2;
 }
 
 .date-badge {
   display: inline-block;
   background-color: #f8f9fa;
   color: #d32f2f;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
-  padding: 6px 16px;
-  border-radius: 20px;
-  margin: 10px 0;
-  border: 1px solid #e9ecef;
+  padding: 8px 20px;
+  border-radius: 25px;
+  margin: 0 0 20px 0;
+  border: 2px solid #e9ecef;
 }
 
 .organizer-info {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+  margin-top: 15px;
 }
 
 .org-label {
-  font-size: 11px;
+  font-size: 13px;
   color: #6c757d;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
 }
 
 .dept-name {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   color: #002b5e;
-  margin: 0;
+  margin: 0 0 5px 0;
+  line-height: 1.4;
 }
 
 .inst-name {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: #495057;
   margin: 0;
+  line-height: 1.5;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .header-body {
+    grid-template-columns: 180px 1fr 180px;
+    gap: 30px;
+  }
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .logo-group img {
+    height: 60px;
+  }
+}
+
 @media (max-width: 992px) {
   .header-body {
-    flex-direction: column;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 25px;
     padding: 20px;
   }
 
   .logo-group {
+    flex-direction: row;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+  }
+
+  .logo-group.left,
+  .logo-group.right {
+    align-items: center;
   }
 
   .hero-title {
-    font-size: 32px;
+    font-size: 36px;
+    letter-spacing: 2px;
   }
 
-  .top-bar {
+  .conference-title {
     font-size: 12px;
-    padding: 10px;
   }
 }
 
 @media (max-width: 576px) {
+  .main-header {
+    padding: 20px 0;
+  }
+
   .logo-group img {
     height: 50px;
-    gap: 15px;
   }
 
   .hero-title {
     font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .conference-title {
+    font-size: 11px;
   }
 
   .dept-name,
   .inst-name {
-    font-size: 11px;
+    font-size: 12px;
+  }
+
+  .date-badge {
+    font-size: 15px;
+    padding: 6px 16px;
   }
 }
 
