@@ -40,6 +40,14 @@
 <body>
 
   <!-- Main Header -->
+   <!-- Scrolling Text -->
+  <div class="scrolling-container text-white py-2" style="background-color: #003366;">
+    <div class="scrolling-content">
+
+      All accepted and presented papers will be published in Springer Nature Scopus Indexed series
+    </div>
+  </div>
+
   <header class="main-header">
     <div class="header-body">
       <!-- Left Logos -->
@@ -70,13 +78,7 @@
     </div>
   </header>
 
-  <!-- Scrolling Text -->
-  <div class="scrolling-container bg-danger text-white py-2">
-    <div class="scrolling-content">
-
-      All accepted and presented papers will be published in Springer Nature Scopus Indexed series
-    </div>
-  </div>
+  
 
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-primary">
@@ -1648,7 +1650,7 @@
         <!-- Useful Links 1 -->
         <div class="col-md-3">
           <h6 class="text-uppercase">Useful Links</h6>
-          <p><a href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICACECS2026">CALL FOR PAPER</a></p>
+          <p><a href="javascript:void(0)" onclick="showSection('call-for-paper')">CALL FOR PAPER</a></p>
           <p>PROGRAMME SCHEDULE</p>
           <p>REGISTRATION</p>
         </div>
@@ -1758,6 +1760,7 @@
     const sectionToShow = document.getElementById(sectionId);
     if (sectionToShow) {
       sectionToShow.classList.add('active');
+      window.scrollTo(0, 0);
     }
   }
   // Show the 'home' section by default when the page loads

@@ -16,7 +16,6 @@ body {
 /* Main Header Container */
 .main-header {
   background: #ffffff;
-  border-bottom: 4px solid #d32f2f;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   padding: 30px 0;
 }
