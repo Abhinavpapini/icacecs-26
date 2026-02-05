@@ -282,6 +282,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   line-height: 1.25;
+  margin-bottom: 6px;
 }
 
 .collaboration-divider {
