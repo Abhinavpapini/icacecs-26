@@ -10,6 +10,36 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.promo-highlight {
+  display: block;
+  color: #8b0018;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, rgba(255, 245, 230, 0.95), rgba(255, 238, 224, 0.95));
+  border: 1px solid rgba(139, 0, 24, 0.12);
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+  animation: promoPulse 1.6s ease-in-out infinite;
+  margin: 0 auto 14px auto;
+  max-width: 980px;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+@keyframes promoPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(176, 0, 32, 0.18);
+    filter: saturate(1);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 0 14px rgba(176, 0, 32, 0);
+    filter: saturate(1.2);
+  }
+}
+
 /* =========================================
    New Professional Header Design
    ========================================= */
