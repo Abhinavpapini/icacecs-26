@@ -478,39 +478,7 @@ body {
 /* Standard Desktop (1200px - 1440px) */
 @media (min-width: 1200px) and (max-width: 1439px) {
   .header-body {
-    padding: 18px 50px 22px 50px;
-  }
-  
-  .hero-title {
-    font-size: 44px;
-    letter-spacing: 5px;
-  }
-  
-  .logo-item img {
-    height: 36px;
-    max-width: 160px;
-  }
-  
-  .logo-item.icacecs-logo img {
-    height: 50px;
-    max-width: 210px;
-  }
-  
-  .logo-item.csi-logo img {
-    height: 40px;
-    max-width: 180px;
-  }
-  
-  .main-header::after {
-    width: 360px;
-    height: 360px;
-  }
-}
-
-/* Small Desktop / Large Tablet Landscape (992px - 1200px) */
-@media (max-width: 1199px) {
-  .header-body {
-    padding: 30px 40px;
+    padding: 15px 30px 18px 30px;
   }
   
   .hero-title {
@@ -518,56 +486,29 @@ body {
     letter-spacing: 4px;
   }
   
-  .logo-bar {
-    right: 1%;
+  .logo-item img {
+    height: 28px;
+    max-width: 130px;
   }
   
-  .logo-item img {
+  .logo-item.icacecs-logo img {
+    height: 42px;
+    max-width: 180px;
+  }
+  
+  .logo-item.csi-logo img {
     height: 34px;
     max-width: 150px;
   }
   
-  .logo-item.icacecs-logo img {
-    height: 46px;
-    max-width: 190px;
-  }
-  
-  .logo-item.csi-logo img {
-    height: 38px;
-    max-width: 170px;
-  }
-  
-  .organizer-section {
-    max-width: 600px;
-    padding: 11px 18px;
-  }
-  
-  .inst-name {
-    font-size: 13px;
-  }
-  
-  .dept-name {
-    font-size: 11px;
-  }
-  
   .main-header::after {
-    width: 320px;
-    height: 320px;
-    left: 1%;
-  }
-  
-  .shape-circle-1 {
-    width: 250px;
-    height: 250px;
-  }
-  
-  .static-top-bar {
-    font-size: 0.95em;
+    width: 260px;
+    height: 260px;
   }
 }
 
-/* Tablet Landscape (992px - 1199px) */
-@media (max-width: 991px) {
+/* Tablet & Medium Screens Stacking (max-width: 1199px) */
+@media (max-width: 1199px) {
   .logo-bar {
     position: static;
     transform: none;
@@ -644,6 +585,10 @@ body {
     height: 150px;
     bottom: -75px;
     left: -40px;
+  }
+  
+  .static-top-bar {
+    font-size: 0.95em;
   }
 }
 
@@ -1734,4 +1679,116 @@ body {
 .footer .copyright {
   text-align: center;
   padding-top: 10px;
+}
+
+/* Premium Keynote Speaker Layout - 9:16 Portrait Aspect Ratio */
+.speakers-container-sg {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+.speaker-profile-card-sg {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speaker-profile-card-sg:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08) !important;
+  border-color: rgba(44, 90, 160, 0.15);
+}
+
+.speaker-avatar-wrap-sg.portrait-frame {
+  width: 180px;
+  height: 270px; /* 2:3 Aspect Ratio */
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  background-color: #f8fafc;
+}
+
+.speaker-img-sg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.speaker-content-sg {
+  flex-grow: 1;
+}
+
+.speaker-name-sg {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2c5aa0;
+  margin-bottom: 4px;
+}
+
+.speaker-title-sg {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 2px;
+}
+
+.speaker-org-sg {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #d32f2f;
+  margin-bottom: 0;
+}
+
+.speaker-divider-sg {
+  margin: 12px 0;
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+.bio-heading-sg {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.speaker-bio-sg {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+/* Tablet & Mobile responsive adjust */
+@media (max-width: 768px) {
+  .speaker-profile-card-sg {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .speaker-avatar-wrap-sg.portrait-frame {
+    width: 160px;
+    height: 240px; /* 2:3 Aspect Ratio */
+  }
+  
+  .speaker-bio-sg {
+    text-align: left;
+  }
 }
