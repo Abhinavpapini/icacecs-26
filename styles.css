@@ -1751,9 +1751,12 @@ body {
 }
 
 .speaker-divider-sg {
-  margin: 12px 0;
-  border: 0;
-  border-top: 1px solid #e2e8f0;
+  margin: 12px 0 !important;
+  border: 0 !important;
+  border-top: 1px solid #e2e8f0 !important;
+  opacity: 1 !important;
+  background-color: transparent !important;
+  color: inherit !important;
 }
 
 .bio-heading-sg {
@@ -1790,5 +1793,76 @@ body {
   
   .speaker-bio-sg {
     text-align: left;
+  }
+}
+
+/* ─── Horizontal Pre-Conference Speaker Cards ─────────────────────────────── */
+
+/* Row container: 3 cards side-by-side on desktop */
+.speakers-container-horiz {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin: 30px auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+/* Each card: equal width, photo on top – content below */
+.speaker-card-horiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1 1 280px;          /* grow / shrink, min 280px */
+  max-width: 360px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 24px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speaker-card-horiz:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08) !important;
+  border-color: rgba(44, 90, 160, 0.15);
+}
+
+/* Portrait photo – centered on top */
+.speaker-avatar-horiz.portrait-frame {
+  width: 150px;
+  height: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  background-color: #f8fafc;
+  margin-bottom: 16px;
+}
+
+/* Card content fills remaining space */
+.speaker-card-horiz .speaker-content-sg {
+  width: 100%;
+}
+
+/* Center-align text inside horiz cards */
+.speaker-card-horiz .speaker-meta-sg,
+.speaker-card-horiz .speaker-bio-sg {
+  text-align: center;
+}
+
+/* ─── Responsive: stack vertically on small screens ──────────────────────── */
+@media (max-width: 768px) {
+  .speakers-container-horiz {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .speaker-card-horiz {
+    max-width: 100%;
+    width: 100%;
   }
 }
