@@ -1866,3 +1866,84 @@ body {
     width: 100%;
   }
 }
+
+/* =========================================
+   PID Registration List Styling
+   ========================================= */
+.pid-container {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+  border: 1px solid rgba(0, 51, 102, 0.1);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pid-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.pid-title {
+  color: #003366;
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.pid-subtitle {
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.pid-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  gap: 12px;
+  justify-content: center;
+}
+
+.pid-badge {
+  background-color: #ffffff;
+  color: #003366;
+  border: 1px solid rgba(0, 51, 102, 0.12);
+  border-radius: 10px;
+  padding: 10px 5px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+
+.pid-badge:hover {
+  background-color: #003366;
+  color: #ffffff;
+  border-color: #003366;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 51, 102, 0.12);
+}
+
+@media (max-width: 576px) {
+  .pid-container {
+    padding: 20px 15px;
+  }
+  .pid-title {
+    font-size: 20px;
+  }
+  .pid-grid {
+    grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
+    gap: 8px;
+  }
+  .pid-badge {
+    font-size: 13px;
+    padding: 8px 3px;
+  }
+}
