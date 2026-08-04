@@ -2055,3 +2055,135 @@ body {
         font-size:2.3rem;
     }
 }
+
+/* Pre-Conference Workshop Invitation Card Styles */
+.invitation-card-sg {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center vertically for balance */
+  gap: 32px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.invitation-card-sg:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08) !important;
+  border-color: rgba(44, 90, 160, 0.15);
+}
+
+.invitation-image-left {
+  flex: 0 0 320px;
+  max-width: 320px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8fafc;
+}
+
+.invitation-image-left a {
+  display: block;
+  width: 100%;
+}
+
+.invitation-img-left {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.invitation-image-left:hover .invitation-img-left {
+  transform: scale(1.01);
+}
+
+.invitation-body-simple {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Consistent spacing between text blocks */
+}
+
+.invitation-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin: 0;
+}
+
+.invitation-text {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.invitation-topic {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin: 2px 0;
+}
+
+.invitation-section-lead {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 4px 0 0 0;
+}
+
+.invitation-speaker {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.4;
+  margin: 0;
+  padding-left: 12px;
+  border-left: 2px solid #cbd5e1;
+}
+
+.invitation-link {
+  color: #2563eb;
+  text-decoration: underline;
+  word-break: break-all;
+  font-weight: 500;
+}
+
+.invitation-link:hover {
+  color: #1d4ed8;
+}
+
+@media (max-width: 992px) {
+  .invitation-card-sg {
+    gap: 24px;
+  }
+  .invitation-image-left {
+    flex: 0 0 260px;
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .invitation-card-sg {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  .invitation-image-left {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 16px;
+  }
+}
+
+
