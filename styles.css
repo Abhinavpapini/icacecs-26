@@ -2185,5 +2185,21 @@ body {
     margin-bottom: 16px;
   }
 }
+.link-container {
+  display: flex;       /* Aligns links horizontally */
+  gap: 20px;          /* Puts a precise 20px space between each link */
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 45px;
+}
 
-
+.button-container .btn {
+    min-width: 220px;
+    padding: 10px 20px;
+}
+
