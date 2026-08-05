@@ -2202,4 +2202,9 @@ body {
     min-width: 220px;
     padding: 10px 20px;
 }
-
+.centered-poster {
+    display: block;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+}
